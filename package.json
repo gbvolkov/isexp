@@ -1,0 +1,24 @@
+{
+  "name": "isexp",
+  "version": "1.0.0",
+  "description": "Exports data from iSmart DB",
+  "main": "isexp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbvolkov/isexp.git"
+  },
+  "keywords": [
+    "ismart",
+    "DB",
+    "mongo"
+  ],
+  "author": "Georgy Volkov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gbvolkov/isexp/issues"
+  },
+  "homepage": "https://github.com/gbvolkov/isexp#readme"
+}

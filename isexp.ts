@@ -88,12 +88,6 @@ const main = async () => {
         },
       },
     });
-	/*
-    if ((await cursor.count()) === 0) {
-      console.log("No documents found!");
-    }
-	*/
-
 	const csvw = csv_writer.createObjectCsvWriter({
 		path: 'orders.csv',
 		header: [

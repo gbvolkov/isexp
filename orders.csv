@@ -1,0 +1,364 @@
+orderID,email,CustomerKey,operation,Status,updateDate,OrderAmount,ItemName,ItemAmount,ItemPrice,ItemQuantity
+612cc2654badc3970d31ab60,alena.kadashnikova@yandex.ru,60fe86077def0f0c36836cb5,PAYMENT,CONFIRMED,Fri Aug 13 2021 13:33:53 GMT+0300 (Moscow Standard Time),45000,TP1,45000,45000,1
+612cc31a4badc3970d31ab61,modakalov82@yandex.ru,5faae78c7738b8001d410ad9,PAYMENT,CONFIRMED,Sat Aug 28 2021 08:37:02 GMT+0300 (Moscow Standard Time),45000,TP1,45000,45000,1
+612cf6f76e159037fe135d6e,parent@ismart.org,6005573d77bd59001e53576a,PAYMENT,CONFIRMED,Mon Aug 30 2021 18:19:19 GMT+0300 (Moscow Standard Time),38000,Математика,19000,19000,1
+612cf6f76e159037fe135d6e,parent@ismart.org,6005573d77bd59001e53576a,PAYMENT,CONFIRMED,Mon Aug 30 2021 18:19:19 GMT+0300 (Moscow Standard Time),38000,Логика,19000,19000,1
+612e9cffae9f06daabe12bbb,shchenyaev@yandex.ru,612e9ba8793c3e12411475c6,PAYMENT,CONFIRMED,Wed Sep 01 2021 00:19:59 GMT+0300 (Moscow Standard Time),399000,Все предметы на год,399000,399000,1
+61322a50523624511c0e5ae6,250419777ty@mail.ru,606b59a4975e8e001f7df80b,PAYMENT,CONFIRMED,Fri Sep 03 2021 16:59:44 GMT+0300 (Moscow Standard Time),19000,Русский язык,19000,19000,1
+6133859d19d2335912ff528a,veronica_goussarova@yahoo.com,6122a58d5511f12e733c855f,PAYMENT,CONFIRMED,Sat Sep 04 2021 17:41:33 GMT+0300 (Moscow Standard Time),399000,Все предметы на год,399000,399000,1
+613612bbdaf568b167e2ae66,milena.bakova@yandex.ru,60d5b53c1d622e7f116fe462,PAYMENT,CONFIRMED,Mon Sep 06 2021 16:08:11 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+61361d6784d5fcf63ba62c5f,orehova643@gmail.com,5e79b5251f6e5d001bb35c50,PAYMENT,CONFIRMED,Mon Sep 06 2021 16:53:43 GMT+0300 (Moscow Standard Time),19000,Английский язык,19000,19000,1
+61376a7b40c0041afc6f5fb4,bbbbb@gmail.com,6137456f1612e4a31b5f3900,PAYMENT,CONFIRMED,Tue Sep 07 2021 16:34:51 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+61386d9089b92f7d3f804e18,miss.lilu.ru@gmail.com,6005841d9d3b4c001c211c95,PAYMENT,CONFIRMED,Wed Sep 08 2021 11:00:16 GMT+0300 (Moscow Standard Time),19000,Английский язык,19000,19000,1
+61386f1b5950702ccce78393,bbbbbbbbb@gmail.com,61386c02bc91ac22b7c49da7,PAYMENT,CONFIRMED,Wed Sep 08 2021 11:06:51 GMT+0300 (Moscow Standard Time),15000,Окружающий мир,15000,15000,1
+61388c8ececce5201a6008d6,pioner774@gmail.com,5f40bef5216976001b596752,PAYMENT,CONFIRMED,Wed Sep 08 2021 13:12:30 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+613ddc7a131ddcc89a0420a1,ikrougliak@inbox.ru,613cb8cd19f71409affb9aab,PAYMENT,CONFIRMED,Sun Sep 12 2021 13:54:50 GMT+0300 (Moscow Standard Time),19000,Английский язык,19000,19000,1
+613f89c563fd2a119c95839c,lady.kutsencko2011@yandex.ru,60d2ef31687a774ebda021eb,PAYMENT,CONFIRMED,Mon Sep 13 2021 20:26:29 GMT+0300 (Moscow Standard Time),377000,Математика,129000,129000,1
+613f89c563fd2a119c95839c,lady.kutsencko2011@yandex.ru,60d2ef31687a774ebda021eb,PAYMENT,CONFIRMED,Mon Sep 13 2021 20:26:29 GMT+0300 (Moscow Standard Time),377000,Русский язык,129000,129000,1
+613f89c563fd2a119c95839c,lady.kutsencko2011@yandex.ru,60d2ef31687a774ebda021eb,PAYMENT,CONFIRMED,Mon Sep 13 2021 20:26:29 GMT+0300 (Moscow Standard Time),377000,Окружающий мир,119000,119000,1
+6140cdd3ec653ab9edc001bc,vskolotov@ya.ru,5fd246849b0bb8001d72cf6c,PAYMENT,CONFIRMED,Tue Sep 14 2021 19:29:07 GMT+0300 (Moscow Standard Time),399000,Все предметы на год,399000,399000,1
+614712dc60323a1c7ac6cdc7,zi-lena@mail.ru,61470ac712e2b6659ffedbe6,PAYMENT,CONFIRMED,Sun Sep 19 2021 13:37:16 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+6149a3d88726b8e14a2227f9,i_mira@mail.ru,6134daaf10e31a3be2b17d17,PAYMENT,CONFIRMED,Tue Sep 21 2021 12:20:24 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+614b413d614067b7a405c018,ecos-gp@yandex.ru,614b319750f7b0efebef1940,PAYMENT,CONFIRMED,Wed Sep 22 2021 17:44:13 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+614c9361471f4f13eec6f9bf,mnenapochtyy@gmail.com,614c9159088eccdd10f2f0b1,PAYMENT,CONFIRMED,Thu Sep 23 2021 17:46:57 GMT+0300 (Moscow Standard Time),19000,Английский язык,19000,19000,1
+6154797c642dbf75424a3bd1,ep2556512_ll01@mail.ru,615475d53d42405f1c19ec06,PAYMENT,CONFIRMED,Wed Sep 29 2021 17:34:36 GMT+0300 (Moscow Standard Time),19000,Логика,19000,19000,1
+61572985280d915aa888f601,tutaevdima@mail.ru,5f95be3d9dadd0001cc9a1d8,PAYMENT,CONFIRMED,Fri Oct 01 2021 18:30:13 GMT+0300 (Moscow Standard Time),25000,Подготовка к школе,25000,25000,1
+61596fa87197dc4ae11d8d90,helga0482@mail.ru,601de870ae6f9f001db34262,PAYMENT,CONFIRMED,Sun Oct 03 2021 11:54:00 GMT+0300 (Moscow Standard Time),57000,Математика,19000,19000,1
+61596fa87197dc4ae11d8d90,helga0482@mail.ru,601de870ae6f9f001db34262,PAYMENT,CONFIRMED,Sun Oct 03 2021 11:54:00 GMT+0300 (Moscow Standard Time),57000,Русский язык,19000,19000,1
+61596fa87197dc4ae11d8d90,helga0482@mail.ru,601de870ae6f9f001db34262,PAYMENT,CONFIRMED,Sun Oct 03 2021 11:54:00 GMT+0300 (Moscow Standard Time),57000,Логика,19000,19000,1
+615f2470484250d6c011d014,irinailina2134@gmail.com,615f20019a6928d78861d03e,PAYMENT,CONFIRMED,Thu Oct 07 2021 19:46:40 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+616039ed1baf86517da0b2bc,eleonorazaharova2017@gmail.com,616039149f1047e0349800d5,PAYMENT,CONFIRMED,Fri Oct 08 2021 15:30:37 GMT+0300 (Moscow Standard Time),133000,Логика,99000,99000,1
+616039ed1baf86517da0b2bc,eleonorazaharova2017@gmail.com,616039149f1047e0349800d5,PAYMENT,CONFIRMED,Fri Oct 08 2021 15:30:37 GMT+0300 (Moscow Standard Time),133000,Русский язык,19000,19000,1
+616039ed1baf86517da0b2bc,eleonorazaharova2017@gmail.com,616039149f1047e0349800d5,PAYMENT,CONFIRMED,Fri Oct 08 2021 15:30:37 GMT+0300 (Moscow Standard Time),133000,Окружающий мир,15000,15000,1
+61613432d928dbfde1168753,shurakova@list.ru,615f9ca09a6928c22d61d049,PAYMENT,CONFIRMED,Sat Oct 09 2021 09:18:26 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+6162802186fb47c2601a5206,liza.golodnykh@mail.ru,5e8e5655307fd7001bb5faba,PAYMENT,CONFIRMED,Sun Oct 10 2021 08:54:41 GMT+0300 (Moscow Standard Time),119000,Подготовка к школе,119000,119000,1
+616473b79cf25aa9cfc9e359,ozornina2019@list.ru,614d3c874a4005b941e072d3,PAYMENT,CONFIRMED,Mon Oct 11 2021 20:26:15 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+616586eeab43ac471a7b167e,miss.lilu.ru@gmail.com,6005841d9d3b4c001c211c95,RENEW,CONFIRMED,Tue Oct 12 2021 16:00:30 GMT+0300 (Moscow Standard Time),19000,Английский язык,19000,19000,1
+6166d7edc51e997fbb6caccc,j.terehova18@gmail.com,60d5d47edc39b9ee1c1e6278,PAYMENT,CONFIRMED,Wed Oct 13 2021 15:58:21 GMT+0300 (Moscow Standard Time),35000,2 класс: диктант по русскому,35000,35000,1
+61671fec85c85aa4237c8c95,shurakova@list.ru,615f9ca09a6928c22d61d049,PAYMENT,CONFIRMED,Wed Oct 13 2021 21:05:32 GMT+0300 (Moscow Standard Time),19000,Русский язык,19000,19000,1
+6167eba8dc996a74f53740fc,trofimowa.ja@yandex.ru,6165806d01a330411dc78e0d,PAYMENT,CONFIRMED,Thu Oct 14 2021 11:34:48 GMT+0300 (Moscow Standard Time),15000,Окружающий мир,15000,15000,1
+61683e42dc996a7f3c37579a,hq-dze@surw.ru,606ad88fce0302001dd63b67,PAYMENT,CONFIRMED,Thu Oct 14 2021 17:27:14 GMT+0300 (Moscow Standard Time),38000,Математика,19000,19000,1
+61683e42dc996a7f3c37579a,hq-dze@surw.ru,606ad88fce0302001dd63b67,PAYMENT,CONFIRMED,Thu Oct 14 2021 17:27:14 GMT+0300 (Moscow Standard Time),38000,Русский язык,19000,19000,1
+616921add039c53f8478588b,zavyalova0203@mail.ru,616921ac76a76d524a9cb76b,PAYMENT,CONFIRMED,Fri Oct 15 2021 09:37:33 GMT+0300 (Moscow Standard Time),35000,4 класс: диктант по русскому,35000,35000,1
+616da19be8b70a55d13900e2,tishkinaolgat@yandex.ru,616c4e3ced247f4510bda28d,PAYMENT,CONFIRMED,Mon Oct 18 2021 19:32:27 GMT+0300 (Moscow Standard Time),19000,Английский язык,19000,19000,1
+616fec59fc4f4e32672f7c8e,o.spichakova@yandex.ru,5e8bada83f5578001bc663fa,PAYMENT,CONFIRMED,Wed Oct 20 2021 13:15:53 GMT+0300 (Moscow Standard Time),35000,"2 класс, контрольный диктант",35000,35000,1
+6171ba4bafe405cfa2ce0841,alexnevsk1@yandex.ru,61716d3f792fd94396950cea,PAYMENT,CONFIRMED,Thu Oct 21 2021 22:06:51 GMT+0300 (Moscow Standard Time),53000,Окружающий мир,15000,15000,1
+6171ba4bafe405cfa2ce0841,alexnevsk1@yandex.ru,61716d3f792fd94396950cea,PAYMENT,CONFIRMED,Thu Oct 21 2021 22:06:51 GMT+0300 (Moscow Standard Time),53000,Логика,19000,19000,1
+6171ba4bafe405cfa2ce0841,alexnevsk1@yandex.ru,61716d3f792fd94396950cea,PAYMENT,CONFIRMED,Thu Oct 21 2021 22:06:51 GMT+0300 (Moscow Standard Time),53000,Математика,19000,19000,1
+61751f7634a2d754cec772f3,tomakuminova79@gmail.com,61751c78b6c74c45ee99a125,PAYMENT,CONFIRMED,Sun Oct 24 2021 11:55:18 GMT+0300 (Moscow Standard Time),54000,Русский язык,19000,19000,1
+61751f7634a2d754cec772f3,tomakuminova79@gmail.com,61751c78b6c74c45ee99a125,PAYMENT,CONFIRMED,Sun Oct 24 2021 11:55:18 GMT+0300 (Moscow Standard Time),54000,"2 класс, контрольный диктант",35000,35000,1
+617542f634a2d71b8ac784fe,elena_ta@mail.ru,60d943fb0ad810ac160e8b89,PAYMENT,CONFIRMED,Sun Oct 24 2021 14:26:46 GMT+0300 (Moscow Standard Time),38000,Математика,19000,19000,1
+617542f634a2d71b8ac784fe,elena_ta@mail.ru,60d943fb0ad810ac160e8b89,PAYMENT,CONFIRMED,Sun Oct 24 2021 14:26:46 GMT+0300 (Moscow Standard Time),38000,Русский язык,19000,19000,1
+61758d64ac755a7c7368f8bc,kireevamg2009@mail.ru,606b5de6ce0302001dd63d22,PAYMENT,CONFIRMED,Sun Oct 24 2021 19:44:20 GMT+0300 (Moscow Standard Time),72000,Окружающий мир,15000,15000,1
+61758d64ac755a7c7368f8bc,kireevamg2009@mail.ru,606b5de6ce0302001dd63d22,PAYMENT,CONFIRMED,Sun Oct 24 2021 19:44:20 GMT+0300 (Moscow Standard Time),72000,Английский язык,19000,19000,1
+61758d64ac755a7c7368f8bc,kireevamg2009@mail.ru,606b5de6ce0302001dd63d22,PAYMENT,CONFIRMED,Sun Oct 24 2021 19:44:20 GMT+0300 (Moscow Standard Time),72000,Математика,19000,19000,1
+61758d64ac755a7c7368f8bc,kireevamg2009@mail.ru,606b5de6ce0302001dd63d22,PAYMENT,CONFIRMED,Sun Oct 24 2021 19:44:20 GMT+0300 (Moscow Standard Time),72000,Русский язык,19000,19000,1
+61767214fd1b9b0a4ef25517,en.tori@yandex.ru,6176676484ce2a6017f19333,PAYMENT,CONFIRMED,Mon Oct 25 2021 12:00:04 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+61767e9e9348cdf974d0b556,lika.bantilov@gmail.com,61726353d88fbf550e489b9c,PAYMENT,CONFIRMED,Mon Oct 25 2021 12:53:34 GMT+0300 (Moscow Standard Time),19000,Английский язык,19000,19000,1
+6177cf6ce618b58fc050905e,kalugina_vor@mail.ru,5e7e41635007d0001b839e1c,PAYMENT,CONFIRMED,Tue Oct 26 2021 12:50:36 GMT+0300 (Moscow Standard Time),19000,Русский язык,19000,19000,1
+6178094bf1c61a8081df6dca,o.spichakova@yandex.ru,5e8bada83f5578001bc663fa,PAYMENT,CONFIRMED,Tue Oct 26 2021 16:57:31 GMT+0300 (Moscow Standard Time),35000,"2 класс, контрольная по математике",35000,35000,1
+6178dbde9ac78b0ea3134335,butstm@mail.ru,6002b8a5a9ef8b001c65f83b,PAYMENT,CONFIRMED,Wed Oct 27 2021 07:55:58 GMT+0300 (Moscow Standard Time),38000,Английский язык,19000,19000,1
+6178dbde9ac78b0ea3134335,butstm@mail.ru,6002b8a5a9ef8b001c65f83b,PAYMENT,CONFIRMED,Wed Oct 27 2021 07:55:58 GMT+0300 (Moscow Standard Time),38000,Математика,19000,19000,1
+617965f69ac78b834413cd13,liudmila0509@yandex.ru,61697fb6852d699e9e4c52ad,PAYMENT,CONFIRMED,Wed Oct 27 2021 17:45:10 GMT+0300 (Moscow Standard Time),34000,Русский язык,19000,19000,1
+617965f69ac78b834413cd13,liudmila0509@yandex.ru,61697fb6852d699e9e4c52ad,PAYMENT,CONFIRMED,Wed Oct 27 2021 17:45:10 GMT+0300 (Moscow Standard Time),34000,Окружающий мир,15000,15000,1
+617ab0be6431c53f1f47ffe3,x.p@list.ru,617aaf81cc3418bffca9279a,PAYMENT,CONFIRMED,Thu Oct 28 2021 17:16:30 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+617e2302f3d58446df01eaef,terehova2711@mail.ru,617e2285a8ea1a7a2c79ee1b,PAYMENT,CONFIRMED,Sun Oct 31 2021 08:00:50 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+617ea74e910863be36b99ab0,ira30bu@yandex.ru,617ad5f681c310d0b3dc5c28,PAYMENT,CONFIRMED,Sun Oct 31 2021 17:25:18 GMT+0300 (Moscow Standard Time),72000,Математика,19000,19000,1
+617ea74e910863be36b99ab0,ira30bu@yandex.ru,617ad5f681c310d0b3dc5c28,PAYMENT,CONFIRMED,Sun Oct 31 2021 17:25:18 GMT+0300 (Moscow Standard Time),72000,Русский язык,19000,19000,1
+617ea74e910863be36b99ab0,ira30bu@yandex.ru,617ad5f681c310d0b3dc5c28,PAYMENT,CONFIRMED,Sun Oct 31 2021 17:25:18 GMT+0300 (Moscow Standard Time),72000,Английский язык,19000,19000,1
+617ea74e910863be36b99ab0,ira30bu@yandex.ru,617ad5f681c310d0b3dc5c28,PAYMENT,CONFIRMED,Sun Oct 31 2021 17:25:18 GMT+0300 (Moscow Standard Time),72000,Окружающий мир,15000,15000,1
+617f8569a56541f35946c0cd,senia-v@yandex.ru,617f82f27aacc7416dd93ddb,PAYMENT,CONFIRMED,Mon Nov 01 2021 09:12:57 GMT+0300 (Moscow Standard Time),19000,Русский язык,19000,19000,1
+61803b6fd598456346d5bb41,latipova.a79@mail.ru,617fad697aacc7ed25d93e01,PAYMENT,CONFIRMED,Mon Nov 01 2021 22:09:35 GMT+0300 (Moscow Standard Time),38000,Математика,19000,19000,1
+61803b6fd598456346d5bb41,latipova.a79@mail.ru,617fad697aacc7ed25d93e01,PAYMENT,CONFIRMED,Mon Nov 01 2021 22:09:35 GMT+0300 (Moscow Standard Time),38000,Английский язык,19000,19000,1
+6180f6953c6d28aac6c03c0e,julia_name@mail.ru,616c494ded247ffab9bda289,PAYMENT,CONFIRMED,Tue Nov 02 2021 11:28:05 GMT+0300 (Moscow Standard Time),399000,Все предметы на год,399000,399000,1
+61823e0af1642019815e241d,veliva@mail.ru,61823186058eb0522f3fb491,PAYMENT,CONFIRMED,Wed Nov 03 2021 10:45:14 GMT+0300 (Moscow Standard Time),25000,Подготовка к школе,25000,25000,1
+61824a5c63e678aa6aec50ea,gala_vg@bk.ru,6180383242fd22b4c45841c5,PAYMENT,CONFIRMED,Wed Nov 03 2021 11:37:48 GMT+0300 (Moscow Standard Time),25000,Подготовка к школе,25000,25000,1
+61827b95101e848a47334641,boyarkinatn@mail.ru,6179ae2d59c7b73ef4906c49,PAYMENT,CONFIRMED,Wed Nov 03 2021 15:07:49 GMT+0300 (Moscow Standard Time),72000,Математика,19000,19000,1
+61827b95101e848a47334641,boyarkinatn@mail.ru,6179ae2d59c7b73ef4906c49,PAYMENT,CONFIRMED,Wed Nov 03 2021 15:07:49 GMT+0300 (Moscow Standard Time),72000,Русский язык,19000,19000,1
+61827b95101e848a47334641,boyarkinatn@mail.ru,6179ae2d59c7b73ef4906c49,PAYMENT,CONFIRMED,Wed Nov 03 2021 15:07:49 GMT+0300 (Moscow Standard Time),72000,Окружающий мир,15000,15000,1
+61827b95101e848a47334641,boyarkinatn@mail.ru,6179ae2d59c7b73ef4906c49,PAYMENT,CONFIRMED,Wed Nov 03 2021 15:07:49 GMT+0300 (Moscow Standard Time),72000,Английский язык,19000,19000,1
+6182cbc2101e8400f6338ba1,makcum2412@gmail.com,5fbd68751d4d0e001d3a26f7,PAYMENT,CONFIRMED,Wed Nov 03 2021 20:49:54 GMT+0300 (Moscow Standard Time),19000,Русский язык,19000,19000,1
+618395a9101e843e4933c6cb,r.slon@list.ru,618392af6a693394d0cc1c3d,PAYMENT,CONFIRMED,Thu Nov 04 2021 11:11:21 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+6183a041fedf4e2b950f3c69,ylia.lavr@yahoo.com,61839fbf3abe7ba0b007d286,PAYMENT,CONFIRMED,Thu Nov 04 2021 11:56:33 GMT+0300 (Moscow Standard Time),72000,Математика,19000,19000,1
+6183a041fedf4e2b950f3c69,ylia.lavr@yahoo.com,61839fbf3abe7ba0b007d286,PAYMENT,CONFIRMED,Thu Nov 04 2021 11:56:33 GMT+0300 (Moscow Standard Time),72000,Русский язык,19000,19000,1
+6183a041fedf4e2b950f3c69,ylia.lavr@yahoo.com,61839fbf3abe7ba0b007d286,PAYMENT,CONFIRMED,Thu Nov 04 2021 11:56:33 GMT+0300 (Moscow Standard Time),72000,Английский язык,19000,19000,1
+6183a041fedf4e2b950f3c69,ylia.lavr@yahoo.com,61839fbf3abe7ba0b007d286,PAYMENT,CONFIRMED,Thu Nov 04 2021 11:56:33 GMT+0300 (Moscow Standard Time),72000,Окружающий мир,15000,15000,1
+6184320c754a9364d029fd67,sveta.cheremisina.88@mail.ru,61841b163abe7b315207d2de,PAYMENT,CONFIRMED,Thu Nov 04 2021 22:18:36 GMT+0300 (Moscow Standard Time),19000,Английский язык,19000,19000,1
+6184f6690c8d2d415e98b60f,mironova.anna@bk.ru,61841ddaa99a4555411f3ca7,PAYMENT,CONFIRMED,Fri Nov 05 2021 12:16:25 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+6184f953b8ca4c99a92f4da1,julia_name@mail.ru,616c494ded247ffab9bda289,PAYMENT,CONFIRMED,Fri Nov 05 2021 12:28:51 GMT+0300 (Moscow Standard Time),399000,Все предметы на год,399000,399000,1
+61851a2d0c8d2daaeb98dde5,durele@bk.ru,61850931bbe6cc57ea9b1d5d,PAYMENT,CONFIRMED,Fri Nov 05 2021 14:49:01 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+61857cd5189bef33c6cefea6,79779191403d@gmail.com,61857cd4bbe6ccea3d9b1da2,PAYMENT,CONFIRMED,Fri Nov 05 2021 21:49:57 GMT+0300 (Moscow Standard Time),35000,"3 класс, контрольный диктант",35000,35000,1
+61861e064c320d65ff901fe4,rysenok12.os@gmail.com,61861e05bb1a0a0839d65707,PAYMENT,CONFIRMED,Sat Nov 06 2021 09:17:42 GMT+0300 (Moscow Standard Time),35000,"4 класс, контрольный диктант",35000,35000,1
+6186a6f9fa2c5104b8cecc8d,glevcenko65@gmail.com,6186468795eae008fd78776d,PAYMENT,CONFIRMED,Sat Nov 06 2021 19:02:01 GMT+0300 (Moscow Standard Time),53000,Математика,19000,19000,1
+6186a6f9fa2c5104b8cecc8d,glevcenko65@gmail.com,6186468795eae008fd78776d,PAYMENT,CONFIRMED,Sat Nov 06 2021 19:02:01 GMT+0300 (Moscow Standard Time),53000,Русский язык,19000,19000,1
+6186a6f9fa2c5104b8cecc8d,glevcenko65@gmail.com,6186468795eae008fd78776d,PAYMENT,CONFIRMED,Sat Nov 06 2021 19:02:01 GMT+0300 (Moscow Standard Time),53000,Окружающий мир,15000,15000,1
+61879d10fa2c51fa02cf2038,liza.golodnykh@mail.ru,5e8e5655307fd7001bb5faba,PAYMENT,CONFIRMED,Sun Nov 07 2021 12:32:00 GMT+0300 (Moscow Standard Time),98000,Логика,19000,19000,1
+61879d10fa2c51fa02cf2038,liza.golodnykh@mail.ru,5e8e5655307fd7001bb5faba,PAYMENT,CONFIRMED,Sun Nov 07 2021 12:32:00 GMT+0300 (Moscow Standard Time),98000,ВПР,79000,79000,1
+6187a6377400b852bf796427,kazakovansk@gmail.com,6179386959c7b7d5d1906b96,PAYMENT,CONFIRMED,Sun Nov 07 2021 13:11:03 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+6187f301b895b1d3e6c4a3f7,darja12@bk.ru,6187eecd37b3202df0292129,PAYMENT,CONFIRMED,Sun Nov 07 2021 18:38:41 GMT+0300 (Moscow Standard Time),38000,Математика,19000,19000,1
+6187f301b895b1d3e6c4a3f7,darja12@bk.ru,6187eecd37b3202df0292129,PAYMENT,CONFIRMED,Sun Nov 07 2021 18:38:41 GMT+0300 (Moscow Standard Time),38000,Русский язык,19000,19000,1
+6188dfb1b895b13e39c52ad7,urelbo@gmail.com,6188d794b893c50d90a15d79,PAYMENT,CONFIRMED,Mon Nov 08 2021 11:28:33 GMT+0300 (Moscow Standard Time),72000,Математика,19000,19000,1
+6188dfb1b895b13e39c52ad7,urelbo@gmail.com,6188d794b893c50d90a15d79,PAYMENT,CONFIRMED,Mon Nov 08 2021 11:28:33 GMT+0300 (Moscow Standard Time),72000,Русский язык,19000,19000,1
+6188dfb1b895b13e39c52ad7,urelbo@gmail.com,6188d794b893c50d90a15d79,PAYMENT,CONFIRMED,Mon Nov 08 2021 11:28:33 GMT+0300 (Moscow Standard Time),72000,Английский язык,19000,19000,1
+6188dfb1b895b13e39c52ad7,urelbo@gmail.com,6188d794b893c50d90a15d79,PAYMENT,CONFIRMED,Mon Nov 08 2021 11:28:33 GMT+0300 (Moscow Standard Time),72000,Окружающий мир,15000,15000,1
+618b6cd2f4b26cdd364061fc,uraregina@yandex.ru,618b6abd93c80e447a1d286b,PAYMENT,CONFIRMED,Wed Nov 10 2021 09:55:14 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+618b6dc7f4b26cb28d4062e5,uraregina@yandex.ru,618b6abd93c80e447a1d286b,PAYMENT,CONFIRMED,Wed Nov 10 2021 09:59:19 GMT+0300 (Moscow Standard Time),39000,ВПР,39000,39000,1
+618c228b4b71617c8313a33d,o.spichakova@yandex.ru,5e8bada83f5578001bc663fa,PAYMENT,CONFIRMED,Wed Nov 10 2021 22:50:35 GMT+0300 (Moscow Standard Time),399000,Все предметы на год,399000,399000,1
+618f9b73d83e4c729258031d,shaova.r@outlook.com,618f97bd38765a44050477a3,PAYMENT,CONFIRMED,Sat Nov 13 2021 14:03:15 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+6190b7d549a4c95679e494ae,spol27@yandex.ru,6190a5f071fc3ff48cb07f42,PAYMENT,CONFIRMED,Sun Nov 14 2021 10:16:37 GMT+0300 (Moscow Standard Time),399000,Все предметы на год,399000,399000,1
+6190ccd149a4c92fafe4a4a1,tomakuminova79@gmail.com,61751c78b6c74c45ee99a125,PAYMENT,CONFIRMED,Sun Nov 14 2021 11:46:09 GMT+0300 (Moscow Standard Time),19000,Русский язык,19000,19000,1
+6191f12ddf2148649b1b793a,midea1008@inbox.ru,601371c293c114001d253cc1,PAYMENT,CONFIRMED,Mon Nov 15 2021 08:33:33 GMT+0300 (Moscow Standard Time),53000,Математика,19000,19000,1
+6191f12ddf2148649b1b793a,midea1008@inbox.ru,601371c293c114001d253cc1,PAYMENT,CONFIRMED,Mon Nov 15 2021 08:33:33 GMT+0300 (Moscow Standard Time),53000,Русский язык,19000,19000,1
+6191f12ddf2148649b1b793a,midea1008@inbox.ru,601371c293c114001d253cc1,PAYMENT,CONFIRMED,Mon Nov 15 2021 08:33:33 GMT+0300 (Moscow Standard Time),53000,Окружающий мир,15000,15000,1
+61928f81437cde2ba27d7e77,andreeva-n-v2010@mail.ru,619281089f98767b3cd015b9,PAYMENT,CONFIRMED,Mon Nov 15 2021 19:49:05 GMT+0300 (Moscow Standard Time),498000,Все предметы на год,399000,399000,1
+61928f81437cde2ba27d7e77,andreeva-n-v2010@mail.ru,619281089f98767b3cd015b9,PAYMENT,CONFIRMED,Mon Nov 15 2021 19:49:05 GMT+0300 (Moscow Standard Time),498000,Логика,99000,99000,1
+6192a159ae52a9bc4a1146ea,tomakuminova79@gmail.com,61751c78b6c74c45ee99a125,PAYMENT,CONFIRMED,Mon Nov 15 2021 21:05:13 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+6192a1d3e0ac7dc2ccb08dcd,tomakuminova79@gmail.com,61751c78b6c74c45ee99a125,PAYMENT,CONFIRMED,Mon Nov 15 2021 21:07:15 GMT+0300 (Moscow Standard Time),34000,Английский язык,19000,19000,1
+6192a1d3e0ac7dc2ccb08dcd,tomakuminova79@gmail.com,61751c78b6c74c45ee99a125,PAYMENT,CONFIRMED,Mon Nov 15 2021 21:07:15 GMT+0300 (Moscow Standard Time),34000,Окружающий мир,15000,15000,1
+6193c516285ac7680b88c042,golden-miracle@yandex.ru,6192b9199f98762c80d01604,PAYMENT,CONFIRMED,Tue Nov 16 2021 17:49:58 GMT+0300 (Moscow Standard Time),219000,Все предметы + логика,219000,219000,1
+6193e32ccdd980c90e713050,telkova.ira2015@yandex.ru,6193dfa7f17ff74ed3a4b836,PAYMENT,CONFIRMED,Tue Nov 16 2021 19:58:20 GMT+0300 (Moscow Standard Time),123000,Математика,19000,19000,1
+6193e32ccdd980c90e713050,telkova.ira2015@yandex.ru,6193dfa7f17ff74ed3a4b836,PAYMENT,CONFIRMED,Tue Nov 16 2021 19:58:20 GMT+0300 (Moscow Standard Time),123000,Русский язык,19000,19000,1
+6193e32ccdd980c90e713050,telkova.ira2015@yandex.ru,6193dfa7f17ff74ed3a4b836,PAYMENT,CONFIRMED,Tue Nov 16 2021 19:58:20 GMT+0300 (Moscow Standard Time),123000,Окружающий мир,15000,15000,1
+6193e32ccdd980c90e713050,telkova.ira2015@yandex.ru,6193dfa7f17ff74ed3a4b836,PAYMENT,CONFIRMED,Tue Nov 16 2021 19:58:20 GMT+0300 (Moscow Standard Time),123000,"3 класс, контрольный диктант",35000,35000,1
+6193e32ccdd980c90e713050,telkova.ira2015@yandex.ru,6193dfa7f17ff74ed3a4b836,PAYMENT,CONFIRMED,Tue Nov 16 2021 19:58:20 GMT+0300 (Moscow Standard Time),123000,"3 класс, контрольная по математике",35000,35000,1
+6193e83914ac2bf6ce6ac732,moremira2016@yandex.ru,6187758b8d36d1008192ec48,PAYMENT,CONFIRMED,Tue Nov 16 2021 20:19:53 GMT+0300 (Moscow Standard Time),25000,Подготовка к школе,25000,25000,1
+6194a2231f752d5393db228a,laptatiana@yandex.ru,6192804e3099514f18f2d079,PAYMENT,CONFIRMED,Wed Nov 17 2021 09:33:07 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+6197fa8567ebcf2c89ea98f9,lliza@inbox.ru,617d23ecbc15ce30c160e6fa,PAYMENT,CONFIRMED,Fri Nov 19 2021 22:27:01 GMT+0300 (Moscow Standard Time),219000,Все предметы + логика,219000,219000,1
+6198130b67ebcfb74dea9d08,semsemsem@yandex.ru,6189760d0f7a514ac627d4cc,PAYMENT,CONFIRMED,Sat Nov 20 2021 00:11:39 GMT+0300 (Moscow Standard Time),219000,Все предметы + логика,219000,219000,1
+619889c01d72ac70d3d09c71,o.mila@bk.ru,6188161ab893c54d4da15d3c,PAYMENT,CONFIRMED,Sat Nov 20 2021 08:38:08 GMT+0300 (Moscow Standard Time),38000,Русский язык,19000,19000,1
+619889c01d72ac70d3d09c71,o.mila@bk.ru,6188161ab893c54d4da15d3c,PAYMENT,CONFIRMED,Sat Nov 20 2021 08:38:08 GMT+0300 (Moscow Standard Time),38000,Английский язык,19000,19000,1
+6198927967ebcf322beab3a3,olgvikil@mail.ru,606b2661ce0302001dd63c3b,PAYMENT,CONFIRMED,Sat Nov 20 2021 09:15:21 GMT+0300 (Moscow Standard Time),219000,Все предметы + логика,219000,219000,1
+619895570e8da2f6922d8100,sashamaier@mail.ru,618d4800deb06e20be717c06,PAYMENT,CONFIRMED,Sat Nov 20 2021 09:27:35 GMT+0300 (Moscow Standard Time),19000,Русский язык,19000,19000,1
+6198c19c0e8da23d3d2da3c7,evdokimovanatala1978@gmail.com,6161bff8e8ab9408aefc34cb,PAYMENT,CONFIRMED,Sat Nov 20 2021 12:36:28 GMT+0300 (Moscow Standard Time),99000,Русский язык,99000,99000,1
+61995fbb0e8da2b23d2e0833,xvoyka81@mail.ru,60b4f40680359321de475ec2,PAYMENT,CONFIRMED,Sat Nov 20 2021 23:51:07 GMT+0300 (Moscow Standard Time),219000,Все предметы + логика,219000,219000,1
+619a59a2c99dfc1f220a588b,liudmilatverdova@gmail.com,5fa591170cd645001db4b134,PAYMENT,CONFIRMED,Sun Nov 21 2021 17:37:22 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+619a5ba57d3463005874fe6d,ozornina2019@list.ru,614d3c874a4005b941e072d3,PAYMENT,CONFIRMED,Sun Nov 21 2021 17:45:57 GMT+0300 (Moscow Standard Time),15000,Окружающий мир,15000,15000,1
+619b41de30bb777406f83601,azikovaira@gmail.com,619893176ac2ba7b6c785dca,PAYMENT,CONFIRMED,Mon Nov 22 2021 10:08:14 GMT+0300 (Moscow Standard Time),89000,Русский язык,19000,19000,1
+619b41de30bb777406f83601,azikovaira@gmail.com,619893176ac2ba7b6c785dca,PAYMENT,CONFIRMED,Mon Nov 22 2021 10:08:14 GMT+0300 (Moscow Standard Time),89000,"3 класс, контрольный диктант",35000,35000,1
+619b41de30bb777406f83601,azikovaira@gmail.com,619893176ac2ba7b6c785dca,PAYMENT,CONFIRMED,Mon Nov 22 2021 10:08:14 GMT+0300 (Moscow Standard Time),89000,"3 класс, контрольная по математике",35000,35000,1
+619e8a403c5c3c5cc2efe9e0,misis.neofitova@gmail.com,619e85e795f81479002dbedc,PAYMENT,CONFIRMED,Wed Nov 24 2021 21:53:52 GMT+0300 (Moscow Standard Time),35000,4 класс: диктант по русскому (2 четверть),35000,35000,1
+619f8624bd4e6b82dd4931aa,lapushunka@mail.ru,600effbbec6f15001c259b10,PAYMENT,CONFIRMED,Thu Nov 25 2021 15:48:36 GMT+0300 (Moscow Standard Time),19000,Английский язык,19000,19000,1
+619fbdd8a694a6456a2cf235,sazanova_olga88@mail.ru,6121f5f15511f1f7aa3c8559,PAYMENT,CONFIRMED,Thu Nov 25 2021 19:46:16 GMT+0300 (Moscow Standard Time),19000,Русский язык,19000,19000,1
+61a103da2250310a06f9d83c,elvira_sun@mail.ru,61a08b39d4fa1a5697993430,PAYMENT,CONFIRMED,Fri Nov 26 2021 18:57:14 GMT+0300 (Moscow Standard Time),219000,Все предметы + логика,219000,219000,1
+61a10b0c9f7ce4ab51455df2,elenamartynova@bk.ru,60a4f57445dc4c00218105f3,PAYMENT,CONFIRMED,Fri Nov 26 2021 19:27:56 GMT+0300 (Moscow Standard Time),95200,Подготовка к школе,95200,95200,1
+61a1e73c6397a76e823d153e,butstm@mail.ru,6002b8a5a9ef8b001c65f83b,PAYMENT,CONFIRMED,Sat Nov 27 2021 11:07:24 GMT+0300 (Moscow Standard Time),19000,Английский язык,19000,19000,1
+61a21103fcfbf6655ea052c1,natalysmak@mail.ru,6158448b39586801eb27e2c3,PAYMENT,CONFIRMED,Sat Nov 27 2021 14:05:39 GMT+0300 (Moscow Standard Time),219000,Все предметы + логика,219000,219000,1
+61a23140fcfbf6d8f5a08e6a,yuliya.gorbatova@mail.ru,61a1a10d970baefa0bbde120,PAYMENT,CONFIRMED,Sat Nov 27 2021 16:23:12 GMT+0300 (Moscow Standard Time),198000,Математика,99000,99000,1
+61a23140fcfbf6d8f5a08e6a,yuliya.gorbatova@mail.ru,61a1a10d970baefa0bbde120,PAYMENT,CONFIRMED,Sat Nov 27 2021 16:23:12 GMT+0300 (Moscow Standard Time),198000,Русский язык,99000,99000,1
+61a37b7bda9622074cb45d67,a.a.landa@yandex.ru,61a374621bec5c208a38ac65,PAYMENT,CONFIRMED,Sun Nov 28 2021 15:52:11 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+61a66598e69eb782fbdce399,89615580408sveta@gmail.com,61a64e7df4578af050194245,PAYMENT,CONFIRMED,Tue Nov 30 2021 20:55:36 GMT+0300 (Moscow Standard Time),38000,Математика,19000,19000,1
+61a66598e69eb782fbdce399,89615580408sveta@gmail.com,61a64e7df4578af050194245,PAYMENT,CONFIRMED,Tue Nov 30 2021 20:55:36 GMT+0300 (Moscow Standard Time),38000,Английский язык,19000,19000,1
+61a6e158e69eb76053dd1f43,nadezhda-2011_91@bk.ru,6064952c439e2e001df73cea,PAYMENT,CONFIRMED,Wed Dec 01 2021 05:43:36 GMT+0300 (Moscow Standard Time),277000,Математика,99000,99000,1
+61a6e158e69eb76053dd1f43,nadezhda-2011_91@bk.ru,6064952c439e2e001df73cea,PAYMENT,CONFIRMED,Wed Dec 01 2021 05:43:36 GMT+0300 (Moscow Standard Time),277000,Русский язык,99000,99000,1
+61a6e158e69eb76053dd1f43,nadezhda-2011_91@bk.ru,6064952c439e2e001df73cea,PAYMENT,CONFIRMED,Wed Dec 01 2021 05:43:36 GMT+0300 (Moscow Standard Time),277000,ВПР,79000,79000,1
+61a7bcab3ec59f1028d19227,kurdykova.tatyana@yandex.ru,61a7b05e9fdb8fcea2d60e64,PAYMENT,CONFIRMED,Wed Dec 01 2021 21:19:23 GMT+0300 (Moscow Standard Time),55000,3 класс: контрольная работа по русскому языку (I полугодие),55000,55000,1
+61a9e85ade179216b82464ce,sedovaalexandra@mail.ru,61a9e77afe1c41583078500f,PAYMENT,CONFIRMED,Fri Dec 03 2021 12:50:18 GMT+0300 (Moscow Standard Time),15000,Окружающий мир,15000,15000,1
+61aa2caa0a899460700a582b,ira30bu@yandex.ru,617ad5f681c310d0b3dc5c28,PAYMENT,CONFIRMED,Fri Dec 03 2021 17:41:46 GMT+0300 (Moscow Standard Time),35000,2 класс: диктант по русскому (2 четверть),35000,35000,1
+61aa2f804430972471d1c705,ira30bu@yandex.ru,617ad5f681c310d0b3dc5c28,PAYMENT,CONFIRMED,Fri Dec 03 2021 17:53:52 GMT+0300 (Moscow Standard Time),19000,Русский язык,19000,19000,1
+61aa3e424551910dc7521e29,bbbbbmbbbb@gmail.com,61aa3e19b0036d78c7cf3d52,PAYMENT,CONFIRMED,Fri Dec 03 2021 18:56:50 GMT+0300 (Moscow Standard Time),15000,Окружающий мир,15000,15000,1
+61ab205082817d61faefcb62,sazanova_olga88@mail.ru,6121f5f15511f1f7aa3c8559,PAYMENT,CONFIRMED,Sat Dec 04 2021 11:01:20 GMT+0300 (Moscow Standard Time),55000,3 класс: контрольная работа по русскому языку (I полугодие),55000,55000,1
+61ab8387359c33442c4345af,ira30bu@yandex.ru,617ad5f681c310d0b3dc5c28,PAYMENT,CONFIRMED,Sat Dec 04 2021 18:04:39 GMT+0300 (Moscow Standard Time),19000,Английский язык,19000,19000,1
+61af1378848c7940c4d61de7,konikova_galina@mail.ru,6198b23e55a9645cd34fc369,PAYMENT,CONFIRMED,Tue Dec 07 2021 10:55:36 GMT+0300 (Moscow Standard Time),399000,Все предметы на год,399000,399000,1
+61af796e76e2d10b65b551ba,dmitrievakatia0896@mail.ru,6166b674b0dfd86f2017fc6f,PAYMENT,CONFIRMED,Tue Dec 07 2021 18:10:38 GMT+0300 (Moscow Standard Time),57000,Русский язык,19000,19000,1
+61af796e76e2d10b65b551ba,dmitrievakatia0896@mail.ru,6166b674b0dfd86f2017fc6f,PAYMENT,CONFIRMED,Tue Dec 07 2021 18:10:38 GMT+0300 (Moscow Standard Time),57000,Английский язык,19000,19000,1
+61af796e76e2d10b65b551ba,dmitrievakatia0896@mail.ru,6166b674b0dfd86f2017fc6f,PAYMENT,CONFIRMED,Tue Dec 07 2021 18:10:38 GMT+0300 (Moscow Standard Time),57000,Математика,19000,19000,1
+61afa4a876e2d1d0ecb5c55d,fashionbugulma@gmail.com,61acf6336e07926178e3f3a2,PAYMENT,CONFIRMED,Tue Dec 07 2021 21:15:04 GMT+0300 (Moscow Standard Time),399000,Все предметы на год,399000,399000,1
+61afb97176e2d17c90b5f199,fashionbugulma@gmail.com,61acf6336e07926178e3f3a2,PAYMENT,CONFIRMED,Tue Dec 07 2021 22:43:45 GMT+0300 (Moscow Standard Time),35000,4 класс: диктант по русскому (2 четверть),35000,35000,1
+61b15b21da3f9caf5572da2b,zoy39@yandex.ru,61af130d98c002e4c85a161a,PAYMENT,CONFIRMED,Thu Dec 09 2021 04:25:53 GMT+0300 (Moscow Standard Time),277000,Математика,99000,99000,1
+61b15b21da3f9caf5572da2b,zoy39@yandex.ru,61af130d98c002e4c85a161a,PAYMENT,CONFIRMED,Thu Dec 09 2021 04:25:53 GMT+0300 (Moscow Standard Time),277000,Русский язык,99000,99000,1
+61b15b21da3f9caf5572da2b,zoy39@yandex.ru,61af130d98c002e4c85a161a,PAYMENT,CONFIRMED,Thu Dec 09 2021 04:25:53 GMT+0300 (Moscow Standard Time),277000,ВПР,79000,79000,1
+61b191a3ca5854a10f99f44e,oks-chernova@mail.ru,5f9a7154508ece001cb01e13,PAYMENT,CONFIRMED,Thu Dec 09 2021 08:18:27 GMT+0300 (Moscow Standard Time),35000,2 класс: диктант по русскому (2 четверть),35000,35000,1
+61b1accbca585400ab9a4a16,zarechnova-irina@mail.ru,61b0e64bce436850c4ccca80,PAYMENT,CONFIRMED,Thu Dec 09 2021 10:14:19 GMT+0300 (Moscow Standard Time),77000,Английский язык,19000,19000,1
+61b1accbca585400ab9a4a16,zarechnova-irina@mail.ru,61b0e64bce436850c4ccca80,PAYMENT,CONFIRMED,Thu Dec 09 2021 10:14:19 GMT+0300 (Moscow Standard Time),77000,Русский язык,19000,19000,1
+61b1accbca585400ab9a4a16,zarechnova-irina@mail.ru,61b0e64bce436850c4ccca80,PAYMENT,CONFIRMED,Thu Dec 09 2021 10:14:19 GMT+0300 (Moscow Standard Time),77000,ВПР,39000,39000,1
+61b223e295f3d4272e00bc59,bea.07@mail.ru,61a8574468b48cb805f3e137,PAYMENT,CONFIRMED,Thu Dec 09 2021 18:42:26 GMT+0300 (Moscow Standard Time),57000,Математика,19000,19000,1
+61b223e295f3d4272e00bc59,bea.07@mail.ru,61a8574468b48cb805f3e137,PAYMENT,CONFIRMED,Thu Dec 09 2021 18:42:26 GMT+0300 (Moscow Standard Time),57000,Русский язык,19000,19000,1
+61b223e295f3d4272e00bc59,bea.07@mail.ru,61a8574468b48cb805f3e137,PAYMENT,CONFIRMED,Thu Dec 09 2021 18:42:26 GMT+0300 (Moscow Standard Time),57000,Логика,19000,19000,1
+61b32f97201a798279ca347f,7258443@mail.ru,5ea298ea306148001b5e5770,PAYMENT,CONFIRMED,Fri Dec 10 2021 13:44:39 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+61b438babfee7c01d9a22fac,joni021113@gmail.com,613457f2663a3f32d618cea6,PAYMENT,CONFIRMED,Sat Dec 11 2021 08:35:54 GMT+0300 (Moscow Standard Time),35000,3 класс: контрольная по математике (2 четверть),35000,35000,1
+61b529fab995a273ba80384e,lara.berdnik@yandex.ru,5ecc3ae972d860001b700a0a,PAYMENT,CONFIRMED,Sun Dec 12 2021 01:45:14 GMT+0300 (Moscow Standard Time),35000,3 класс: диктант по русскому (2 четверть),35000,35000,1
+61b571788f4fd43bfeeb7fac,fts08@mail.ru,61b494f0f8f5782260c31921,PAYMENT,CONFIRMED,Sun Dec 12 2021 06:50:16 GMT+0300 (Moscow Standard Time),38000,Математика,19000,19000,1
+61b571788f4fd43bfeeb7fac,fts08@mail.ru,61b494f0f8f5782260c31921,PAYMENT,CONFIRMED,Sun Dec 12 2021 06:50:16 GMT+0300 (Moscow Standard Time),38000,Русский язык,19000,19000,1
+61b5a778b031edb6469cbc7e,ozornina2019@list.ru,614d3c874a4005b941e072d3,PAYMENT,CONFIRMED,Sun Dec 12 2021 10:40:40 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+61b5b106b031ed283f9cdbbb,barhatova-kseniy@mail.ru,61af168598c002009a5a1624,PAYMENT,CONFIRMED,Sun Dec 12 2021 11:21:26 GMT+0300 (Moscow Standard Time),19000,Логика,19000,19000,1
+61b5c6368f4fd46bb9ec7e0c,leska_@mail.ru,61b177a4eb6b8a535a9e1ef1,PAYMENT,CONFIRMED,Sun Dec 12 2021 12:51:50 GMT+0300 (Moscow Standard Time),15000,Окружающий мир,15000,15000,1
+61b5c6a28f4fd425ccec7faa,leska_@mail.ru,61b177a4eb6b8a535a9e1ef1,PAYMENT,CONFIRMED,Sun Dec 12 2021 12:53:38 GMT+0300 (Moscow Standard Time),19000,Английский язык,19000,19000,1
+61b5db3eb031ed00549d691a,bublik.natalia89@gmail.com,61af742f4a9378712088ee5e,PAYMENT,CONFIRMED,Sun Dec 12 2021 14:21:34 GMT+0300 (Moscow Standard Time),19000,Логика,19000,19000,1
+61b61c37b031ed5fd09e57d3,leska_@mail.ru,61b177a4eb6b8a535a9e1ef1,PAYMENT,CONFIRMED,Sun Dec 12 2021 18:58:47 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+61b6f82407aa7e4e8f2dc2f2,langolf7216@gmail.coma,61b6f8234c5700248d9ab2c3,PAYMENT,CONFIRMED,Mon Dec 13 2021 10:37:08 GMT+0300 (Moscow Standard Time),35000,4 класс: диктант по русскому (2 четверть),35000,35000,1
+61b6f8e507aa7e78372dc613,langolf7216@gmail.coma,61b6f8234c5700248d9ab2c3,PAYMENT,CONFIRMED,Mon Dec 13 2021 10:40:21 GMT+0300 (Moscow Standard Time),35000,4 класс: контрольная по математике (2 четверть),35000,35000,1
+61b6f9be7c40ce2af03ae9c2,langolf7216@gmail.coma,61b6f8234c5700248d9ab2c3,PAYMENT,CONFIRMED,Mon Dec 13 2021 10:43:58 GMT+0300 (Moscow Standard Time),55000,4 класс: контрольная работа по математике (I полугодие),55000,55000,1
+61b701177c40cef7e73afe10,allgeodez@mail.ru,61b6fb3436080443a8ff01c9,PAYMENT,CONFIRMED,Mon Dec 13 2021 11:15:19 GMT+0300 (Moscow Standard Time),53000,Окружающий мир,15000,15000,1
+61b701177c40cef7e73afe10,allgeodez@mail.ru,61b6fb3436080443a8ff01c9,PAYMENT,CONFIRMED,Mon Dec 13 2021 11:15:19 GMT+0300 (Moscow Standard Time),53000,Русский язык,19000,19000,1
+61b701177c40cef7e73afe10,allgeodez@mail.ru,61b6fb3436080443a8ff01c9,PAYMENT,CONFIRMED,Mon Dec 13 2021 11:15:19 GMT+0300 (Moscow Standard Time),53000,Математика,19000,19000,1
+61b9d6e4c64aacb2e46f6d47,a.budash@yandex.ru,61b9d5cefdeb253d600f8219,PAYMENT,CONFIRMED,Wed Dec 15 2021 14:52:04 GMT+0300 (Moscow Standard Time),25000,Подготовка к школе,25000,25000,1
+61bb1ff6a002f5b0cb4a79ee,edeleva.nv@gmail.com,61baefea7dd0c19168719138,PAYMENT,CONFIRMED,Thu Dec 16 2021 14:16:06 GMT+0300 (Moscow Standard Time),72000,Математика,19000,19000,1
+61bb1ff6a002f5b0cb4a79ee,edeleva.nv@gmail.com,61baefea7dd0c19168719138,PAYMENT,CONFIRMED,Thu Dec 16 2021 14:16:06 GMT+0300 (Moscow Standard Time),72000,Русский язык,19000,19000,1
+61bb1ff6a002f5b0cb4a79ee,edeleva.nv@gmail.com,61baefea7dd0c19168719138,PAYMENT,CONFIRMED,Thu Dec 16 2021 14:16:06 GMT+0300 (Moscow Standard Time),72000,Английский язык,19000,19000,1
+61bb1ff6a002f5b0cb4a79ee,edeleva.nv@gmail.com,61baefea7dd0c19168719138,PAYMENT,CONFIRMED,Thu Dec 16 2021 14:16:06 GMT+0300 (Moscow Standard Time),72000,Окружающий мир,15000,15000,1
+61bb6eb3cb601dbc4cfa6e28,nrepeva@mail.ru,607f6dce3d1c76001e009a72,PAYMENT,CONFIRMED,Thu Dec 16 2021 19:52:03 GMT+0300 (Moscow Standard Time),19000,Русский язык,19000,19000,1
+61bc9198dc2e1a24cc8e0db1,katti391@rambler.ru,61bb40417dd0c12fea719151,PAYMENT,CONFIRMED,Fri Dec 17 2021 16:33:12 GMT+0300 (Moscow Standard Time),19000,Русский язык,19000,19000,1
+61bd1fccdc2e1af2dc8fee9d,liza.golodnykh@mail.ru,5e8e5655307fd7001bb5faba,PAYMENT,CONFIRMED,Sat Dec 18 2021 02:39:56 GMT+0300 (Moscow Standard Time),35000,Орфография,35000,35000,1
+61bdc88f8c6c8d4fc300e246,lisa-inessa@mail.ru,618faf9638765ad2ac0477b4,PAYMENT,CONFIRMED,Sat Dec 18 2021 14:39:59 GMT+0300 (Moscow Standard Time),53000,Математика,19000,19000,1
+61bdc88f8c6c8d4fc300e246,lisa-inessa@mail.ru,618faf9638765ad2ac0477b4,PAYMENT,CONFIRMED,Sat Dec 18 2021 14:39:59 GMT+0300 (Moscow Standard Time),53000,Окружающий мир,15000,15000,1
+61bdc88f8c6c8d4fc300e246,lisa-inessa@mail.ru,618faf9638765ad2ac0477b4,PAYMENT,CONFIRMED,Sat Dec 18 2021 14:39:59 GMT+0300 (Moscow Standard Time),53000,Русский язык,19000,19000,1
+61bddffa8c6c8dace9011b67,mityaev.m@yandex.ru,61b5b21b14d318577a21f341,PAYMENT,CONFIRMED,Sat Dec 18 2021 16:19:54 GMT+0300 (Moscow Standard Time),130000,Математика,19000,19000,1
+61bddffa8c6c8dace9011b67,mityaev.m@yandex.ru,61b5b21b14d318577a21f341,PAYMENT,CONFIRMED,Sat Dec 18 2021 16:19:54 GMT+0300 (Moscow Standard Time),130000,Русский язык,19000,19000,1
+61bddffa8c6c8dace9011b67,mityaev.m@yandex.ru,61b5b21b14d318577a21f341,PAYMENT,CONFIRMED,Sat Dec 18 2021 16:19:54 GMT+0300 (Moscow Standard Time),130000,Окружающий мир,15000,15000,1
+61bddffa8c6c8dace9011b67,mityaev.m@yandex.ru,61b5b21b14d318577a21f341,PAYMENT,CONFIRMED,Sat Dec 18 2021 16:19:54 GMT+0300 (Moscow Standard Time),130000,Английский язык,19000,19000,1
+61bddffa8c6c8dace9011b67,mityaev.m@yandex.ru,61b5b21b14d318577a21f341,PAYMENT,CONFIRMED,Sat Dec 18 2021 16:19:54 GMT+0300 (Moscow Standard Time),130000,Логика,19000,19000,1
+61bddffa8c6c8dace9011b67,mityaev.m@yandex.ru,61b5b21b14d318577a21f341,PAYMENT,CONFIRMED,Sat Dec 18 2021 16:19:54 GMT+0300 (Moscow Standard Time),130000,ВПР,39000,39000,1
+61be27658499aeea226e1135,aln.82@mail.ru,5e731ba3405e4e001b061d9b,PAYMENT,CONFIRMED,Sat Dec 18 2021 21:24:37 GMT+0300 (Moscow Standard Time),19000,Английский язык,19000,19000,1
+61bf6a68b32fd4e546a119ea,pochta-dok13@mail.ru,5f7b4fb4eb9a40001c37227e,PAYMENT,CONFIRMED,Sun Dec 19 2021 20:22:48 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+61c02f5f9055da74757f7b66,jul.terehova@gmail.com,60ddcfc0517e3bfd95abff6a,PAYMENT,CONFIRMED,Mon Dec 20 2021 10:23:11 GMT+0300 (Moscow Standard Time),15000,Окружающий мир,15000,15000,1
+61c06da99055daa8e5803b1b,mnkv_el@mail.ru,61b03b6d4a9378667c88ee9b,PAYMENT,CONFIRMED,Mon Dec 20 2021 14:48:57 GMT+0300 (Moscow Standard Time),119000,ВПР + Логика,119000,119000,1
+61c0b3e7992fed955457a517,ozornina2019@list.ru,614d3c874a4005b941e072d3,PAYMENT,CONFIRMED,Mon Dec 20 2021 19:48:39 GMT+0300 (Moscow Standard Time),19000,Русский язык,19000,19000,1
+61c1c0d663e8102458388663,jul.terehova@gmail.com,60ddcfc0517e3bfd95abff6a,PAYMENT,CONFIRMED,Tue Dec 21 2021 14:56:06 GMT+0300 (Moscow Standard Time),19000,Русский язык,19000,19000,1
+61c2fdcdb5c1f66728c929c1,tomakuminova79@gmail.com,61751c78b6c74c45ee99a125,PAYMENT,CONFIRMED,Wed Dec 22 2021 13:28:29 GMT+0300 (Moscow Standard Time),35000,2 класс: диктант по русскому (2 четверть),35000,35000,1
+61c4571adf63941e70bfca75,zaya_85@inbox.ru,61c43fde2a4cdc33fa328ef8,PAYMENT,CONFIRMED,Thu Dec 23 2021 14:01:46 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+61c4cd8753545f29a2b82fcd,alexshatohin@yandex.ru,61c4b1a955a7206919720796,PAYMENT,CONFIRMED,Thu Dec 23 2021 22:27:03 GMT+0300 (Moscow Standard Time),38000,Математика,19000,19000,1
+61c4cd8753545f29a2b82fcd,alexshatohin@yandex.ru,61c4b1a955a7206919720796,PAYMENT,CONFIRMED,Thu Dec 23 2021 22:27:03 GMT+0300 (Moscow Standard Time),38000,Русский язык,19000,19000,1
+61c70164c50a9b40c319797a,zem81olga@mail.ru,5f63acf05ec1af001bf0e5ab,PAYMENT,CONFIRMED,Sat Dec 25 2021 14:32:52 GMT+0300 (Moscow Standard Time),119000,ВПР + Логика,119000,119000,1
+61c833d4e98a3c9cbab938ce,alexshatohin@yandex.ru,61c4b1a955a7206919720796,PAYMENT,CONFIRMED,Sun Dec 26 2021 12:20:20 GMT+0300 (Moscow Standard Time),19000,Логика,19000,19000,1
+61c9990baf084421b58e577b,ikrougliak@inbox.ru,613cb8cd19f71409affb9aab,PAYMENT,CONFIRMED,Mon Dec 27 2021 13:44:27 GMT+0300 (Moscow Standard Time),39000,ВПР,39000,39000,1
+61c9db95af08441f558ee905,velr@gmail.com,61c9bd0e76b54e56656b90ca,PAYMENT,CONFIRMED,Mon Dec 27 2021 18:28:21 GMT+0300 (Moscow Standard Time),19000,subscription,19000,19000,1
+61ca11859e8958304812dc22,snezhana7483@yandex.ru,6192ce6c9f987698f8d01609,PAYMENT,CONFIRMED,Mon Dec 27 2021 22:18:29 GMT+0300 (Moscow Standard Time),151000,Математика,19000,19000,1
+61ca11859e8958304812dc22,snezhana7483@yandex.ru,6192ce6c9f987698f8d01609,PAYMENT,CONFIRMED,Mon Dec 27 2021 22:18:29 GMT+0300 (Moscow Standard Time),151000,Русский язык,19000,19000,1
+61ca11859e8958304812dc22,snezhana7483@yandex.ru,6192ce6c9f987698f8d01609,PAYMENT,CONFIRMED,Mon Dec 27 2021 22:18:29 GMT+0300 (Moscow Standard Time),151000,Окружающий мир,15000,15000,1
+61ca11859e8958304812dc22,snezhana7483@yandex.ru,6192ce6c9f987698f8d01609,PAYMENT,CONFIRMED,Mon Dec 27 2021 22:18:29 GMT+0300 (Moscow Standard Time),151000,ВПР,79000,79000,1
+61ca11859e8958304812dc22,snezhana7483@yandex.ru,6192ce6c9f987698f8d01609,PAYMENT,CONFIRMED,Mon Dec 27 2021 22:18:29 GMT+0300 (Moscow Standard Time),151000,Логика,19000,19000,1
+61caf94c9e8958381713b881,varvara-12.12@mail.ru,61a87b25f2fa6d70f892e097,PAYMENT,CONFIRMED,Tue Dec 28 2021 14:47:24 GMT+0300 (Moscow Standard Time),65000,Математика + Русский + Логика,65000,65000,1
+61ccc0e0c082a1f449e6a1ed,latanya80@yandex.ru,61a65dbb4fcf60659035d724,PAYMENT,CONFIRMED,Wed Dec 29 2021 23:11:12 GMT+0300 (Moscow Standard Time),119000,ВПР + Логика,119000,119000,1
+61cd544d1a032e5bad690f52,lilipups@yandex.ru,61cd53c5c57e28329f015b92,PAYMENT,CONFIRMED,Thu Dec 30 2021 09:40:13 GMT+0300 (Moscow Standard Time),19000,Логика,19000,19000,1
+61d14c85fc1272738d29345b,blak99@mail.ru,61cee584ec57ca3f01c98f58,PAYMENT,CONFIRMED,Sun Jan 02 2022 09:56:05 GMT+0300 (Moscow Standard Time),399000,Все предметы на год,399000,399000,1
+61d2e8b8babbd137db332c2c,kalugina_vor@mail.ru,5e7e41635007d0001b839e1c,PAYMENT,CONFIRMED,Mon Jan 03 2022 15:14:48 GMT+0300 (Moscow Standard Time),19000,Русский язык,19000,19000,1
+61d481815225d142a336d6c0,avalanche2012@mail.ru,61d3f6cda01400cc4516e16d,PAYMENT,CONFIRMED,Tue Jan 04 2022 20:18:57 GMT+0300 (Moscow Standard Time),129000,Русский язык,129000,129000,1
+61d544d7286f4d7a5f61663d,anpilogova@terreuscapital.ru,61d4950c21b9eb61d2ba8b35,PAYMENT,CONFIRMED,Wed Jan 05 2022 10:12:23 GMT+0300 (Moscow Standard Time),19000,Русский язык,19000,19000,1
+61d5dab6f8aec52c87f4c34e,dashabazanova@yandex.ru,61d5d7f1efcafc51336cc166,PAYMENT,CONFIRMED,Wed Jan 05 2022 20:51:50 GMT+0300 (Moscow Standard Time),38000,Математика,19000,19000,1
+61d5dab6f8aec52c87f4c34e,dashabazanova@yandex.ru,61d5d7f1efcafc51336cc166,PAYMENT,CONFIRMED,Wed Jan 05 2022 20:51:50 GMT+0300 (Moscow Standard Time),38000,Русский язык,19000,19000,1
+61d69bcf2a5a2aed4c0f358c,polyaver@mail.ru,61d69b0c52192c8c776ac812,PAYMENT,CONFIRMED,Thu Jan 06 2022 10:35:43 GMT+0300 (Moscow Standard Time),72000,Русский язык,19000,19000,1
+61d69bcf2a5a2aed4c0f358c,polyaver@mail.ru,61d69b0c52192c8c776ac812,PAYMENT,CONFIRMED,Thu Jan 06 2022 10:35:43 GMT+0300 (Moscow Standard Time),72000,Математика,19000,19000,1
+61d69bcf2a5a2aed4c0f358c,polyaver@mail.ru,61d69b0c52192c8c776ac812,PAYMENT,CONFIRMED,Thu Jan 06 2022 10:35:43 GMT+0300 (Moscow Standard Time),72000,Окружающий мир,15000,15000,1
+61d69bcf2a5a2aed4c0f358c,polyaver@mail.ru,61d69b0c52192c8c776ac812,PAYMENT,CONFIRMED,Thu Jan 06 2022 10:35:43 GMT+0300 (Moscow Standard Time),72000,Логика,19000,19000,1
+61d7e1b1f37bf83990cc523b,ponetaikina.ira@mail.ru,5fa438beb3bd3a001e7f0a63,PAYMENT,CONFIRMED,Fri Jan 07 2022 09:46:09 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+61d841218e7a72ed9e9d21fe,lilichka.khalilova@mail.ru,61af68984a9378868e88ee5a,PAYMENT,CONFIRMED,Fri Jan 07 2022 16:33:21 GMT+0300 (Moscow Standard Time),159000,Подготовка к школе,159000,159000,1
+61d9c1550b330f3eb50fe684,anpilogova@terreuscapital.ru,61d4950c21b9eb61d2ba8b35,PAYMENT,CONFIRMED,Sat Jan 08 2022 19:52:37 GMT+0300 (Moscow Standard Time),19000,Английский язык,19000,19000,1
+61da90979da3e867e71ade2c,ozornina2019@list.ru,614d3c874a4005b941e072d3,PAYMENT,CONFIRMED,Sun Jan 09 2022 10:36:55 GMT+0300 (Moscow Standard Time),15000,Окружающий мир,15000,15000,1
+61db05d5334e9f3caa36c4f5,wolfgang.skribot@gmail.com,60786d44f1fcde001dc35aba,PAYMENT,CONFIRMED,Sun Jan 09 2022 18:57:09 GMT+0300 (Moscow Standard Time),399000,Все предметы на год,399000,399000,1
+61dba5c0f2144db5899e68b8,mednikovaav@ya.ru,61dba464ebe73d1768a9b696,PAYMENT,CONFIRMED,Mon Jan 10 2022 06:19:28 GMT+0300 (Moscow Standard Time),34000,Русский язык,19000,19000,1
+61dba5c0f2144db5899e68b8,mednikovaav@ya.ru,61dba464ebe73d1768a9b696,PAYMENT,CONFIRMED,Mon Jan 10 2022 06:19:28 GMT+0300 (Moscow Standard Time),34000,Окружающий мир,15000,15000,1
+61dc1ee213ae24f07be8a67a,m.abramenko@cdek.ru,61dc1da8ebe73d0308a9b6b3,PAYMENT,CONFIRMED,Mon Jan 10 2022 14:56:18 GMT+0300 (Moscow Standard Time),99000,Математика,99000,99000,1
+61ddcfc477fcf3e17fb0d516,olyushkavb2012@gmail.com,5efb9753d948dc001b9bfc95,PAYMENT,CONFIRMED,Tue Jan 11 2022 21:43:16 GMT+0300 (Moscow Standard Time),79000,ВПР,79000,79000,1
+61df260800c6bf029683e7e6,ana.alyutova@yandex.ru,61df12f818f84e2bd380defa,PAYMENT,CONFIRMED,Wed Jan 12 2022 22:03:36 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+61dfe62b00c6bfa76c84759f,tiarb@mail.ru,61dfdf4518f84ed78d80df0c,PAYMENT,CONFIRMED,Thu Jan 13 2022 11:43:23 GMT+0300 (Moscow Standard Time),69000,Логика,19000,19000,1
+61dfe62b00c6bfa76c84759f,tiarb@mail.ru,61dfdf4518f84ed78d80df0c,PAYMENT,CONFIRMED,Thu Jan 13 2022 11:43:23 GMT+0300 (Moscow Standard Time),69000,ОВЗ,50000,50000,1
+61dffab1da1fec73db16475a,kassper90@mail.ru,61dff50c18f84e797380df10,PAYMENT,CONFIRMED,Thu Jan 13 2022 13:10:57 GMT+0300 (Moscow Standard Time),57000,Математика,19000,19000,1
+61dffab1da1fec73db16475a,kassper90@mail.ru,61dff50c18f84e797380df10,PAYMENT,CONFIRMED,Thu Jan 13 2022 13:10:57 GMT+0300 (Moscow Standard Time),57000,Русский язык,19000,19000,1
+61dffab1da1fec73db16475a,kassper90@mail.ru,61dff50c18f84e797380df10,PAYMENT,CONFIRMED,Thu Jan 13 2022 13:10:57 GMT+0300 (Moscow Standard Time),57000,Английский язык,19000,19000,1
+61e04eafb2142151844df4b3,i_ryazanceva@mail.ru,61b5bab014d318ac2a21f345,PAYMENT,CONFIRMED,Thu Jan 13 2022 19:09:19 GMT+0300 (Moscow Standard Time),59000,Все предметы на год,59000,59000,1
+61e17d4ece8e71c5b6ee827f,tomakuminova79@gmail.com,61751c78b6c74c45ee99a125,PAYMENT,CONFIRMED,Fri Jan 14 2022 16:40:30 GMT+0300 (Moscow Standard Time),40000,2 класс: контрольная по математике (3 четверть),40000,40000,1
+61e1c71ece8e719e8def0398,yulia.balycheva@gmail.com,61d08ea785352ea452c65689,PAYMENT,CONFIRMED,Fri Jan 14 2022 21:55:26 GMT+0300 (Moscow Standard Time),185000,Подготовка к школе,185000,185000,1
+61e52a54c4b27ce007242acc,gmardegalyamova@mail.ru,61dd4a44f72eee2098f49607,PAYMENT,CONFIRMED,Mon Jan 17 2022 11:35:32 GMT+0300 (Moscow Standard Time),45000,Подготовка к школе,45000,45000,1
+61e52db470f16b146016cefc,gmardegalyamova@mail.ru,61dd4a44f72eee2098f49607,PAYMENT,CONFIRMED,Mon Jan 17 2022 11:49:56 GMT+0300 (Moscow Standard Time),59000,Все предметы,59000,59000,1
+61e57dd0e6501f12db4ef94c,diandkaramba@gmail.com,61e576cb98b315e50dfb358b,PAYMENT,CONFIRMED,Mon Jan 17 2022 17:31:44 GMT+0300 (Moscow Standard Time),99000,Математика,99000,99000,1
+61e6972a7ce8488bd1cd2bde,naumova_larisa@inbox.ru,61e68f8ffe430f18f51d8610,PAYMENT,CONFIRMED,Tue Jan 18 2022 13:32:10 GMT+0300 (Moscow Standard Time),90000,ВПР,90000,90000,1
+61e706c83c469d3ce772005d,tomakuminova79@gmail.com,61751c78b6c74c45ee99a125,RENEW,CONFIRMED,Tue Jan 18 2022 21:28:24 GMT+0300 (Moscow Standard Time),19000,Математика,19000,19000,1
+61e7071d8190fa374b22ee0a,tomakuminova79@gmail.com,61751c78b6c74c45ee99a125,RENEW,CONFIRMED,Tue Jan 18 2022 21:29:49 GMT+0300 (Moscow Standard Time),15000,Окружающий мир,15000,15000,1
+61e71c42fadbe0fdf9cb6538,hujiajun@mail.ru,61c47ee8382817a73c18881f,PAYMENT,CONFIRMED,Tue Jan 18 2022 23:00:02 GMT+0300 (Moscow Standard Time),40000,2 класс: диктант по русскому (3 четверть),40000,40000,1
+61e71d523c469d21f2722121,hujiajun@mail.ru,61c47ee8382817a73c18881f,PAYMENT,CONFIRMED,Tue Jan 18 2022 23:04:34 GMT+0300 (Moscow Standard Time),40000,2 класс: контрольная по математике (3 четверть),40000,40000,1
+61ea94fcf4b681115e5f4112,titovanata_75@mail.ru,605ff458c9d06d001caeb9ec,PAYMENT,CONFIRMED,Fri Jan 21 2022 14:11:56 GMT+0300 (Moscow Standard Time),59000,Все предметы,59000,59000,1
+61ebd339df985761e633c797,pks59@mail.ru,61ebd19006bd346ded55f2f2,PAYMENT,CONFIRMED,Sat Jan 22 2022 12:49:45 GMT+0300 (Moscow Standard Time),50000,ОВЗ,50000,50000,1
+61ed94121017a17222e2d3a3,ab-sovetnikat@yandex.ru,61ed867f8074462a37d716f1,PAYMENT,CONFIRMED,Sun Jan 23 2022 20:44:50 GMT+0300 (Moscow Standard Time),29000,Английский язык,29000,29000,1
+61efb4f3f391246e57cd2ca9,alexshatohin@yandex.ru,61c4b1a955a7206919720796,PAYMENT,CONFIRMED,Tue Jan 25 2022 11:29:39 GMT+0300 (Moscow Standard Time),29000,Русский язык,29000,29000,1
+61f285208f5ff1b5cd1153c4,bogdanovam84@mail.ru,61f27e3be8016f214e47d899,PAYMENT,CONFIRMED,Thu Jan 27 2022 14:42:24 GMT+0300 (Moscow Standard Time),45000,Подготовка к школе,45000,45000,1
+61f2efff6db9ad30caa1d774,mariaboronenkova@gmail.com,61f1b6fee8016f263f47d869,PAYMENT,CONFIRMED,Thu Jan 27 2022 22:18:23 GMT+0300 (Moscow Standard Time),59000,Все предметы,59000,59000,1
+61f2f09b6db9ad2bdea1d886,mariaboronenkova@gmail.com,61f1b6fee8016f263f47d869,PAYMENT,CONFIRMED,Thu Jan 27 2022 22:20:59 GMT+0300 (Moscow Standard Time),45000,Подготовка к школе,45000,45000,1
+61f30ba16db9ad7222a1ea95,elenashi85@gmail.com,616d2b37ed247f92ebbda2b7,PAYMENT,CONFIRMED,Fri Jan 28 2022 00:16:17 GMT+0300 (Moscow Standard Time),145000,ВПР + Логика,145000,145000,1
+61f7c4c9b68f78d3d482e839,alena2336@gmail.com,6082b65fee6c4f001ce9bb5e,PAYMENT,CONFIRMED,Mon Jan 31 2022 14:15:21 GMT+0300 (Moscow Standard Time),99000,Русский язык,99000,99000,1
+61f81f07b68f78e7f38474cd,kovaleva-2017@bk.ru,5ee0bfc6025b88001c47f229,PAYMENT,CONFIRMED,Mon Jan 31 2022 20:40:23 GMT+0300 (Moscow Standard Time),145000,ВПР + Логика,145000,145000,1
+61f938b29b52ea4a59db9df6,maska.iz123@gmail.com,5fcf8d60ec87f0001c0e5e8f,PAYMENT,CONFIRMED,Tue Feb 01 2022 16:42:10 GMT+0300 (Moscow Standard Time),249000,ОВЗ,249000,249000,1
+61f96cb85b37d9746847051e,anisimova-o@mail.ru,5ffec1354bea08001e10fb83,PAYMENT,CONFIRMED,Tue Feb 01 2022 20:24:08 GMT+0300 (Moscow Standard Time),29000,Окружающий мир,29000,29000,1
+61fa72de50910a063f554e81,mir-line@yandex.ru,61fa6aeccc89194eacc46372,PAYMENT,CONFIRMED,Wed Feb 02 2022 15:02:38 GMT+0300 (Moscow Standard Time),104000,Все предметы,59000,59000,1
+61fa72de50910a063f554e81,mir-line@yandex.ru,61fa6aeccc89194eacc46372,PAYMENT,CONFIRMED,Wed Feb 02 2022 15:02:38 GMT+0300 (Moscow Standard Time),104000,ВПР,45000,45000,1
+61fabd070d9a4e440730fbde,rufiyaa@rambler.ru,61f8370f9d187e26b6296585,PAYMENT,CONFIRMED,Wed Feb 02 2022 20:19:03 GMT+0300 (Moscow Standard Time),59000,Все предметы,59000,59000,1
+61fb79dee229c42c6148304d,medvedevayi@gmail.com,61f91cd4e1e16f6ba0c12d00,PAYMENT,CONFIRMED,Thu Feb 03 2022 09:44:46 GMT+0300 (Moscow Standard Time),45000,Подготовка к школе,45000,45000,1
+61fbc54aa4b92c3743244e7c,alyona_knyazeva@mail.ru,61b8542a07406fbf579866d5,PAYMENT,CONFIRMED,Thu Feb 03 2022 15:06:34 GMT+0300 (Moscow Standard Time),90000,ВПР + Логика,90000,90000,1
+61fc089f4e84b481aff2f2ab,laptatiana@yandex.ru,6192804e3099514f18f2d079,PAYMENT,CONFIRMED,Thu Feb 03 2022 19:53:51 GMT+0300 (Moscow Standard Time),29000,Русский язык,29000,29000,1
+61fd43a386e5c5e7c39869c3,o.spichakova@yandex.ru,5e8bada83f5578001bc663fa,PAYMENT,CONFIRMED,Fri Feb 04 2022 18:17:55 GMT+0300 (Moscow Standard Time),40000,2 класс: диктант по русскому (3 четверть),40000,40000,1
+61fe38e2bffc800538c38d52,morozovadarina@gmail.com,61fcd965be6995414c8bf841,PAYMENT,CONFIRMED,Sat Feb 05 2022 11:44:18 GMT+0300 (Moscow Standard Time),87000,Окружающий мир,29000,29000,1
+61fe38e2bffc800538c38d52,morozovadarina@gmail.com,61fcd965be6995414c8bf841,PAYMENT,CONFIRMED,Sat Feb 05 2022 11:44:18 GMT+0300 (Moscow Standard Time),87000,Математика,29000,29000,1
+61fe38e2bffc800538c38d52,morozovadarina@gmail.com,61fcd965be6995414c8bf841,PAYMENT,CONFIRMED,Sat Feb 05 2022 11:44:18 GMT+0300 (Moscow Standard Time),87000,Русский язык,29000,29000,1
+61ff9406f24fef164c78f991,daryagitlits@yandex.ru,6155cc35105e5d1bff2dc3f8,PAYMENT,CONFIRMED,Sun Feb 06 2022 12:25:26 GMT+0300 (Moscow Standard Time),59000,Все предметы,59000,59000,1
+6200d36e417a486eb29823bd,zuzauhta@yandex.ru,61f125a0df26cb1ef5c495a1,PAYMENT,CONFIRMED,Mon Feb 07 2022 11:08:14 GMT+0300 (Moscow Standard Time),90000,ВПР + Логика,90000,90000,1
+6200fa65417a48ba61989e1c,leka05@yandex.ru,6200f78deb9a7e3203841402,PAYMENT,CONFIRMED,Mon Feb 07 2022 13:54:29 GMT+0300 (Moscow Standard Time),59000,Все предметы,59000,59000,1
+6203bd8f8bf3ef0a72652b69,ozornina2019@list.ru,614d3c874a4005b941e072d3,PAYMENT,CONFIRMED,Wed Feb 09 2022 16:11:43 GMT+0300 (Moscow Standard Time),29000,Русский язык,29000,29000,1
+620555ea7c06bbb46935a212,snezhana7483@yandex.ru,6192ce6c9f987698f8d01609,PAYMENT,CONFIRMED,Thu Feb 10 2022 21:14:02 GMT+0300 (Moscow Standard Time),9900,Love is...,9900,9900,1
+62066107224ac038627f9f5f,bbbbbbbbb@gmail.com,61386c02bc91ac22b7c49da7,PAYMENT,CONFIRMED,Fri Feb 11 2022 16:13:43 GMT+0300 (Moscow Standard Time),9900,Love is...,9900,9900,1
+6207383723820b9506adee6d,blak99@mail.ru,61cee584ec57ca3f01c98f58,PAYMENT,CONFIRMED,Sat Feb 12 2022 07:31:51 GMT+0300 (Moscow Standard Time),220000,Математическое мышление,220000,220000,1
+620cdb94396b362b6bf9bd86,katshak@mail.ru,6183871f6a6933cfb7cc1c36,PAYMENT,CONFIRMED,Wed Feb 16 2022 14:10:12 GMT+0300 (Moscow Standard Time),90000,ВПР,90000,90000,1
+620d03d9779d5252c745be72,tomakuminova79@gmail.com,61751c78b6c74c45ee99a125,PAYMENT,CONFIRMED,Wed Feb 16 2022 17:02:01 GMT+0300 (Moscow Standard Time),29000,Русский язык,29000,29000,1
+620d043e779d52c70f45c310,tomakuminova79@gmail.com,61751c78b6c74c45ee99a125,PAYMENT,CONFIRMED,Wed Feb 16 2022 17:03:41 GMT+0300 (Moscow Standard Time),59000,Все предметы,59000,59000,1
+620e1397ca709d4b1dc6db66,lena_balobanova@mail.ru,620bc9ef23c7280db03249af,PAYMENT,CONFIRMED,Thu Feb 17 2022 12:21:27 GMT+0300 (Moscow Standard Time),92700,Все предметы,50200,50200,1
+620e1397ca709d4b1dc6db66,lena_balobanova@mail.ru,620bc9ef23c7280db03249af,PAYMENT,CONFIRMED,Thu Feb 17 2022 12:21:27 GMT+0300 (Moscow Standard Time),92700,Логика,42500,42500,1
+620f868246266e743f261f99,baboscha@mail.ru,620d1ea9c5cb993ffc078193,PAYMENT,CONFIRMED,Fri Feb 18 2022 14:44:02 GMT+0300 (Moscow Standard Time),38300,Подготовка к школе,38300,38300,1
+620fc8c646266e7179275201,tavrizluso@gmail.com,620ea90a204eed27b9cf9052,PAYMENT,CONFIRMED,Fri Feb 18 2022 19:26:46 GMT+0300 (Moscow Standard Time),50200,Все предметы,50200,50200,1
+6210ef09e7080f0bf9a825ff,wisehearted@mail.ru,5e7e02e05007d0001b839dd2,PAYMENT,CONFIRMED,Sat Feb 19 2022 16:22:17 GMT+0300 (Moscow Standard Time),29000,Математика,29000,29000,1
+6210f0cce7080fd38fa82fdc,wisehearted@mail.ru,5e7e02e05007d0001b839dd2,PAYMENT,CONFIRMED,Sat Feb 19 2022 16:29:48 GMT+0300 (Moscow Standard Time),29000,Русский язык,29000,29000,1
+62126a08d17ae863a90e374b,nataly171172@yandex.ru,621262d352678b84a47fd287,PAYMENT,CONFIRMED,Sun Feb 20 2022 19:19:20 GMT+0300 (Moscow Standard Time),50200,Все предметы,50200,50200,1
+621624952312262a87b02458,anpilogova@terreuscapital.ru,61d4950c21b9eb61d2ba8b35,RENEW,CONFIRMED,Wed Feb 23 2022 15:12:05 GMT+0300 (Moscow Standard Time),19000,Русский язык,19000,19000,1
+621641f4bf71dd64334e10d9,vcecegov@yandex.ru,5f7e009fc27824001d615421,PAYMENT,CONFIRMED,Wed Feb 23 2022 17:17:24 GMT+0300 (Moscow Standard Time),29000,Русский язык,29000,29000,1
+621747131ab6f57ebd41edb8,inna.riyanova@mail.ru,6217464e3d167f162f0e4e3c,PAYMENT,CONFIRMED,Thu Feb 24 2022 11:51:31 GMT+0300 (Moscow Standard Time),50200,Все предметы,50200,50200,1
+6218cd13e59f896b7774e00a,olgvikil@mail.ru,606b2661ce0302001dd63c3b,PAYMENT,CONFIRMED,Fri Feb 25 2022 15:35:31 GMT+0300 (Moscow Standard Time),135000,Подготовка к ВПР 2022,135000,135000,1
+6218e30db26e1ee49f577906,mityaev.m@yandex.ru,61b5b21b14d318577a21f341,PAYMENT,CONFIRMED,Fri Feb 25 2022 17:09:17 GMT+0300 (Moscow Standard Time),29000,Математика,29000,29000,1
+621900a29de85706c818caa8,irinaegorova50@mail.ru,6212353752678b72707fd283,PAYMENT,CONFIRMED,Fri Feb 25 2022 19:15:30 GMT+0300 (Moscow Standard Time),50200,Все предметы,50200,50200,1
+621b790bb1faedd9a3ea1b8a,yulya.mitneva.76@mail.ru,621b74fd6d0b7b1f3758fa71,PAYMENT,CONFIRMED,Sun Feb 27 2022 16:13:47 GMT+0300 (Moscow Standard Time),50200,Все предметы,50200,50200,1
+621e1f671490566bb7c1a8b4,bulycevaelena68@gmail.com,621e1c7a13aed7e0512d7448,PAYMENT,CONFIRMED,Tue Mar 01 2022 16:28:07 GMT+0300 (Moscow Standard Time),50200,Все предметы,50200,50200,1
+621f9fd7870eb3247de8b893,ismarttest5@yandex.ru,604a42c95382eb001dc0db5f,PAYMENT,CONFIRMED,Wed Mar 02 2022 19:48:23 GMT+0300 (Moscow Standard Time),24700,Математика,24700,24700,1
+6221e99b5a25dcd2060b4d6a,bbbbbbbbb@gmail.com,61386c02bc91ac22b7c49da7,PAYMENT,CONFIRMED,Fri Mar 04 2022 13:27:39 GMT+0300 (Moscow Standard Time),100,Свежие пончики,100,100,1
+622229527118d5667f34671c,natgorbunova81@gmail.com,5ffc7e1c2e8924001c5f7645,PAYMENT,CONFIRMED,Fri Mar 04 2022 17:59:30 GMT+0300 (Moscow Standard Time),29000,Английский язык,29000,29000,1
+62238596b3065e54b3d85a6d,alyona860407@yandex.ru,62237eeb77be23f110884152,PAYMENT,CONFIRMED,Sat Mar 05 2022 18:45:26 GMT+0300 (Moscow Standard Time),38300,Подготовка к школе,38300,38300,1
+6224e05742f4404b8bb62c23,saryglar.ruslana@mail.ru,6224d342022ca80a0f8efb60,PAYMENT,CONFIRMED,Sun Mar 06 2022 19:24:55 GMT+0300 (Moscow Standard Time),38300,ВПР,38300,38300,1
+62271b7ff45721041b8a61ad,schedrina@yandex.ru,62271736d4971d491c6512c8,PAYMENT,CONFIRMED,Tue Mar 08 2022 12:01:51 GMT+0300 (Moscow Standard Time),38300,Подготовка к школе,38300,38300,1
+6229d0d0dc63e830183ae91f,dukova2035@yandex.ru,6229d057ca5c6d084cb1cccb,PAYMENT,CONFIRMED,Thu Mar 10 2022 13:20:00 GMT+0300 (Moscow Standard Time),50200,Все предметы,50200,50200,1
+622a28f5dc7397862c23e3a9,annareutova@gmail.com,6171837c10dc466ac572e76f,PAYMENT,CONFIRMED,Thu Mar 10 2022 19:36:05 GMT+0300 (Moscow Standard Time),249000,ОВЗ,249000,249000,1
+622b0cc1c9f3a0236a72825a,hiranyangi_@mail.ru,6229c21f74ae3a4d3e45f726,PAYMENT,CONFIRMED,Fri Mar 11 2022 11:48:01 GMT+0300 (Moscow Standard Time),50200,Все предметы,50200,50200,1
+622ed327dd26262748b08224,anpilogova@terreuscapital.ru,61d4950c21b9eb61d2ba8b35,PAYMENT,CONFIRMED,Mon Mar 14 2022 08:31:19 GMT+0300 (Moscow Standard Time),29000,Окружающий мир,29000,29000,1
+6230c3ab1763a12e83a73800,miheevasa1977@gmail.com,6089bd041cd7d3001d5ed98d,PAYMENT,CONFIRMED,Tue Mar 15 2022 19:49:47 GMT+0300 (Moscow Standard Time),135000,Подготовка к ВПР 2022,135000,135000,1
+623432e36779ec7c0263194f,nastya.klem73@mail.ru,62333d2eebab494b38d92bac,PAYMENT,CONFIRMED,Fri Mar 18 2022 10:21:07 GMT+0300 (Moscow Standard Time),59000,Все предметы,59000,59000,1
+62357629a129bf574a085034,e.dars@mail.ru,621ae6a71cdcb66307ddd39a,PAYMENT,CONFIRMED,Sat Mar 19 2022 09:20:25 GMT+0300 (Moscow Standard Time),135000,Подготовка к ВПР 2022,135000,135000,1
+623590f1e4a76442b4adc86a,portmmann@list.ru,623229c97b7df5cc7af14432,PAYMENT,CONFIRMED,Sat Mar 19 2022 11:14:41 GMT+0300 (Moscow Standard Time),29000,Русский язык,29000,29000,1
+6235922b78f2694579ef241a,aln.82@mail.ru,5e731ba3405e4e001b061d9b,PAYMENT,CONFIRMED,Sat Mar 19 2022 11:19:55 GMT+0300 (Moscow Standard Time),45000,ВПР,45000,45000,1
+6235b82be4a764c491ae1f8c,lanakuz97@gmail.com,622db8d77022c3786ab74320,PAYMENT,CONFIRMED,Sat Mar 19 2022 14:02:03 GMT+0300 (Moscow Standard Time),29000,Русский язык,29000,29000,1
+62403747eba2fea39d95b642,kisluxina-1979@mail.ru,624004ae9e40ddc59a9d6b68,PAYMENT,CONFIRMED,Sun Mar 27 2022 13:07:03 GMT+0300 (Moscow Standard Time),40000,Состав слова,40000,40000,1
+624038d5eba2fe1c2495bf2d,oscirova@yandex.ru,62363a7f137256713d21a0ee,PAYMENT,CONFIRMED,Sun Mar 27 2022 13:13:41 GMT+0300 (Moscow Standard Time),45000,ВПР,45000,45000,1
+62417d22586512bf46ef44f4,snezhana7483@yandex.ru,6192ce6c9f987698f8d01609,PAYMENT,CONFIRMED,Mon Mar 28 2022 12:17:22 GMT+0300 (Moscow Standard Time),59000,Все предметы,59000,59000,1
+6242eed5d326130f54318150,lya738@yandex.ru,6236ebe2824fe072f6df0848,PAYMENT,CONFIRMED,Tue Mar 29 2022 14:34:45 GMT+0300 (Moscow Standard Time),29000,Русский язык,29000,29000,1
+6243eaf497d9eb5e2ff06b4b,alexandrovna7777@yandex.ru,623af660a56bf28d8d786b08,PAYMENT,CONFIRMED,Wed Mar 30 2022 08:30:28 GMT+0300 (Moscow Standard Time),19000,subscription,19000,19000,1
+6245752595de8e812303f7de,firma_de_alma@mail.ru,62454dc8ad0fd1a587e6697a,PAYMENT,CONFIRMED,Thu Mar 31 2022 12:32:21 GMT+0300 (Moscow Standard Time),89000,Все предметы,59000,59000,1
+6245752595de8e812303f7de,firma_de_alma@mail.ru,62454dc8ad0fd1a587e6697a,PAYMENT,CONFIRMED,Thu Mar 31 2022 12:32:21 GMT+0300 (Moscow Standard Time),89000,Финграмотность,30000,30000,1
+624bec775176852c3e9b5672,svkotelnikova@mail.ru,623ab00e9c29a67c66c2003d,PAYMENT,CONFIRMED,Tue Apr 05 2022 10:15:03 GMT+0300 (Moscow Standard Time),59000,Все предметы,59000,59000,1
+624bf64d5176858bda9b93de,e.zhukova@shukow.ru,605ddaca9f5fd1001dd0d31d,PAYMENT,CONFIRMED,Tue Apr 05 2022 10:57:01 GMT+0300 (Moscow Standard Time),90000,ВПР,90000,90000,1
+624c107851768577899c7de9,liubov.hillen@gmail.com,62474a7c45aa5a65ed1433a4,PAYMENT,CONFIRMED,Tue Apr 05 2022 12:48:40 GMT+0300 (Moscow Standard Time),412800,Подготовка к школе,103200,103200,1
+624c107851768577899c7de9,liubov.hillen@gmail.com,62474a7c45aa5a65ed1433a4,PAYMENT,CONFIRMED,Tue Apr 05 2022 12:48:40 GMT+0300 (Moscow Standard Time),412800,Математика,103200,103200,1
+624c107851768577899c7de9,liubov.hillen@gmail.com,62474a7c45aa5a65ed1433a4,PAYMENT,CONFIRMED,Tue Apr 05 2022 12:48:40 GMT+0300 (Moscow Standard Time),412800,Русский язык,103200,103200,1
+624c107851768577899c7de9,liubov.hillen@gmail.com,62474a7c45aa5a65ed1433a4,PAYMENT,CONFIRMED,Tue Apr 05 2022 12:48:40 GMT+0300 (Moscow Standard Time),412800,Английский язык,103200,103200,1
+624c33b07808d214ab48c732,kormina.demina@mail.ru,6243c08d72155f2a171b7037,PAYMENT,CONFIRMED,Tue Apr 05 2022 15:18:56 GMT+0300 (Moscow Standard Time),343200,Все предметы,343200,343200,1
+624c3edf98b7af7aab21eae2,ozornina2019@list.ru,614d3c874a4005b941e072d3,RENEW,CONFIRMED,Tue Apr 05 2022 16:06:39 GMT+0300 (Moscow Standard Time),19000,Русский язык,19000,19000,1
+624dda13f0b3e75899bd7d8a,dd9214327775@gmail.com,624dd611c0905d7fdddb72d3,PAYMENT,CONFIRMED,Wed Apr 06 2022 21:21:07 GMT+0300 (Moscow Standard Time),30000,Финграмотность,30000,30000,1
+624e8d8a5931e88239139231,vika.koromzina11.08.2001@gmail.com,624be9e20f43868124458250,PAYMENT,CONFIRMED,Thu Apr 07 2022 10:06:50 GMT+0300 (Moscow Standard Time),29000,Математика,29000,29000,1
+624e94c50cc8bc12827e36b8,temnyakov.e@gmail.com,6208fe40e50bb07d607ac4e5,PAYMENT,CONFIRMED,Thu Apr 07 2022 10:37:41 GMT+0300 (Moscow Standard Time),50000,subscription,50000,50000,1
+624ea6192cd9b344fdf75c66,miriam-koenig@mail.ru,6243fc2a72155f63e81b7052,PAYMENT,CONFIRMED,Thu Apr 07 2022 11:51:37 GMT+0300 (Moscow Standard Time),26100,Математика,26100,26100,1
+625071dcd1bfaa06d9732cd0,ksyun88ster@gmail.com,61eb2ca406bd340ca155f2de,PAYMENT,CONFIRMED,Fri Apr 08 2022 20:33:16 GMT+0300 (Moscow Standard Time),343200,Все предметы,343200,343200,1
+6251125fdee708a5f180c5a0,mjm-78@yandex.ru,61a7850fe26604f916c57cc6,PAYMENT,CONFIRMED,Sat Apr 09 2022 07:58:07 GMT+0300 (Moscow Standard Time),29000,Математика,29000,29000,1
+62517bb8dee7088415838a6a,lolalalu@yandex.ru,6250151cff8abac19e232644,PAYMENT,CONFIRMED,Sat Apr 09 2022 15:27:36 GMT+0300 (Moscow Standard Time),59000,Все предметы,59000,59000,1
+62518f64c19b0510bb1e482b,zuli84@inbox.ru,607329db606178001d034e43,PAYMENT,CONFIRMED,Sat Apr 09 2022 16:51:32 GMT+0300 (Moscow Standard Time),29000,Математика,29000,29000,1
+62525efd68b6e97c26814210,tigrads@bk.ru,6251ab7e5bda6780da278574,PAYMENT,CONFIRMED,Sun Apr 10 2022 07:37:17 GMT+0300 (Moscow Standard Time),29000,Математика,29000,29000,1
+62543e7b32f04e4ed3d3cbd8,tatbol82@mail.ru,6254098c3e7feb29b7b0692b,PAYMENT,CONFIRMED,Mon Apr 11 2022 17:43:07 GMT+0300 (Moscow Standard Time),59000,Все предметы,59000,59000,1
+625533e6c30d0f00109c8a1e,mar.pilipenko77@yandex.ru,6243f72d7297877d3fcc8c06,PAYMENT,CONFIRMED,Tue Apr 12 2022 11:10:14 GMT+0300 (Moscow Standard Time),50000,ОВЗ,50000,50000,1
+6255c3af0f122b75ff3b7310,m48915090@yandex.ru,6255bda3e989e4d6792e09c6,PAYMENT,CONFIRMED,Tue Apr 12 2022 21:23:43 GMT+0300 (Moscow Standard Time),59000,Все предметы,59000,59000,1
+625639f00f122bdf003c9a8d,lena_balobanova@mail.ru,620bc9ef23c7280db03249af,PAYMENT,CONFIRMED,Wed Apr 13 2022 05:48:16 GMT+0300 (Moscow Standard Time),65000,Занимайся на каникулах 😎,65000,65000,1
+6256f2010e2740851bafa1b6,ehrika313@mail.ru,624b263b8d62beb16998836e,PAYMENT,CONFIRMED,Wed Apr 13 2022 18:53:37 GMT+0300 (Moscow Standard Time),59000,Все предметы,59000,59000,1
+6256f2c600a40312615bb27e,daraharskaa0@gmail.com,62482b04d95d62d1c7017505,PAYMENT,CONFIRMED,Wed Apr 13 2022 18:56:54 GMT+0300 (Moscow Standard Time),29000,Русский язык,29000,29000,1
+6257bca700a403526b5ff0a6,sheo77@mail.ru,6257bb499f5e00d1b8924c9f,PAYMENT,CONFIRMED,Thu Apr 14 2022 09:18:15 GMT+0300 (Moscow Standard Time),29000,Русский язык,29000,29000,1
+6257c19b0e2740f0dbb41089,zarechnova-irina@mail.ru,61b0e64bce436850c4ccca80,PAYMENT,CONFIRMED,Thu Apr 14 2022 09:39:23 GMT+0300 (Moscow Standard Time),29000,Русский язык,29000,29000,1
+6257d83e7e2bcaab5fbbc6cd,diana.moskvina.01@mail.ru,6247db69cdebe430e28c199c,PAYMENT,CONFIRMED,Thu Apr 14 2022 11:15:58 GMT+0300 (Moscow Standard Time),29000,Математика,29000,29000,1

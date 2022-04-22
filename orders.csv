@@ -1,4 +1,4 @@
-orderID,email,CustomerKey,operation,Status,updateDate,OrderAmount,ItemName,ItemAmount,ItemPrice,ItemQuantity,subscriptionName,planPeriod
+OrderID,EMail,CustomerKey,Operation,Status,OrderDate,OrderAmount,ItemName,ItemAmount,ItemPrice,ItemQuantity,Subscription,Period
 612cc2654badc3970d31ab60,alena.kadashnikova@yandex.ru,60fe86077def0f0c36836cb5,PAYMENT,CONFIRMED,Fri Aug 13 2021 13:33:53 GMT+0300 (Moscow Standard Time),45000,TP1,45000,45000,1,,
 612cc31a4badc3970d31ab61,modakalov82@yandex.ru,5faae78c7738b8001d410ad9,PAYMENT,CONFIRMED,Sat Aug 28 2021 08:37:02 GMT+0300 (Moscow Standard Time),45000,TP1,45000,45000,1,,
 612cf6f76e159037fe135d6e,parent@ismart.org,6005573d77bd59001e53576a,PAYMENT,CONFIRMED,Mon Aug 30 2021 18:19:19 GMT+0300 (Moscow Standard Time),38000,Математика,19000,19000,1,Математика,

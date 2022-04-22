@@ -186,19 +186,19 @@ async function main(): Promise<void> {
     const csvw = csv_writer.createObjectCsvWriter({
       path: "orders.csv",
       header: [
-        { id: "orderId", title: "orderID" },
-        { id: "email", title: "email" },
+        { id: "orderId", title: "OrderID" },
+        { id: "email", title: "EMail" },
         { id: "customerKey", title: "CustomerKey" },
-        { id: "operation", title: "operation" },
+        { id: "operation", title: "Operation" },
         { id: "status", title: "Status" },
-        { id: "updateDate", title: "updateDate" },
+        { id: "updateDate", title: "OrderDate" },
         { id: "orderAmount", title: "OrderAmount" },
         { id: "itemName", title: "ItemName" },
         { id: "itemAmount", title: "ItemAmount" },
         { id: "itemPrice", title: "ItemPrice" },
         { id: "itemQtty", title: "ItemQuantity" },
-        { id: "subscriptionName", title: "subscriptionName" },
-        { id: "planPeriod", title: "planPeriod" },
+        { id: "subscriptionName", title: "Subscription" },
+        { id: "planPeriod", title: "Period" },
       ],
     });
 

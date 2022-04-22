@@ -41,7 +41,6 @@ interface OrderUserSubscription {
   period: number;
 }
 
-
 interface Order {
   _id: mongoDB.ObjectId;
   operation: string;
@@ -64,17 +63,17 @@ interface Subscription {
 }
 
 interface csvData {
-	orderId: string;
-	operation: string;
-	updateDate: Date;
-	customerKey: string;
-	orderAmount: number;
-	status: string;
-	email: string;
-	itemName: string;
-	itemAmount: number;
-	itemPrice: number;
-	itemQtty: number;
+  orderId: string;
+  operation: string;
+  updateDate: Date;
+  customerKey: string;
+  orderAmount: number;
+  status: string;
+  email: string;
+  itemName: string;
+  itemAmount: number;
+  itemPrice: number;
+  itemQtty: number;
   subscriptionName: string | undefined;
   planPeriod: number | undefined;
   subscriptionId: mongoDB.ObjectId;
@@ -84,19 +83,15 @@ interface csvData {
 	itemPaymentObject: string;*/
 }
 
-
-
-
-
-
-
-function getSubsciption (db: mongoDB.Db, id: mongoDB.ObjectId): Promise<Subscription | null> {
+function getSubsciption(
+  db: mongoDB.Db,
+  id: mongoDB.ObjectId
+): Promise<Subscription | null> {
   const subscriptions = db.collection(
     process.env.SUBSCRIPTIONS_COLLECTION as string
   );
 
-  const result =  subscriptions
-  .findOne<Subscription>({_id: id,});
+  const result = subscriptions.findOne<Subscription>({ _id: id });
   return result;
 }
 
@@ -106,7 +101,7 @@ async function getOrders(db: mongoDB.Db): Promise<csvData[]> {
 
   const query = {
     operation: { $in: ["PAYMENT", "RENEW"] },
-    "data.Status": "CONFIRMED"
+    "data.Status": "CONFIRMED",
   };
 
   const cursor = orders.find<Order>(query, {
@@ -141,7 +136,7 @@ async function getOrders(db: mongoDB.Db): Promise<csvData[]> {
       if (doc.operation === "RENEW") {
         subscriptionId = doc.userSubscriptions[idx]?.userSubscriptionId;
       } else {
-        subscriptionId = doc.subscriptions[idx]?.subscriptionId
+        subscriptionId = doc.subscriptions[idx]?.subscriptionId;
       }
       csvres.push({
         orderId: doc._id.toHexString(),
@@ -165,18 +160,19 @@ async function getOrders(db: mongoDB.Db): Promise<csvData[]> {
   }
 
   const subscriptions = await Promise.all(getSubscriptionPromises);
-  csvres.forEach(function(row, idx) {
+  csvres.forEach(function (row, idx) {
     row.subscriptionName = subscriptions[idx]?.name;
     if (row.operation === "PAYMENT") {
-      row.planPeriod = subscriptions[idx]?.plans.find(plan => plan._id.toHexString()===row.planId?.toHexString())?.period;
+      row.planPeriod = subscriptions[idx]?.plans.find(
+        (plan) => plan._id.toHexString() === row.planId?.toHexString()
+      )?.period;
     }
   });
 
   return csvres;
 }
 
-
-const main = async () => {
+async function main(): Promise<void> {
   dotenv.config();
 
   const client: mongoDB.MongoClient = new mongoDB.MongoClient(
@@ -207,12 +203,13 @@ const main = async () => {
     });
 
     const csvres = await getOrders(db);
-    csvw.writeRecords(csvres)
-    .then(() => console.log("The CSV file was written successfully"));
+    csvw
+      .writeRecords(csvres)
+      .then(() => console.log("The CSV file was written successfully"));
   } finally {
     await client.close();
   }
   return;
-};
+}
 
 main();

@@ -24,43 +24,47 @@ interface CustomerData {
 }
 
 interface OrderData {
-  CustomerKey: string;
-  Amount: number;
   Status: string;
+  Amount: number;
+  CustomerKey: string;
   DATA: CustomerData;
   Receipt: ReceiptData;
 }
 
+interface Plan2 {
+  period: number;
+  price: number;
+}
+
+interface PlanID {
+  _id: mongoDB.ObjectId;
+}
+
+
+interface Subscription {
+  name: string;
+  description: string;
+}
+
 interface OrderSubscription {
   subscriptionId: mongoDB.ObjectId;
-  planId: mongoDB.ObjectId;
+  userEmail: string;
+  subscription: Subscription;
+  plan: Plan2;
 }
 
-interface OrderUserSubscription {
-  userSubscriptionId: mongoDB.ObjectId;
-  period: number;
+interface OrderPlans {
+  planIDs: PlanID;
 }
 
-interface Order {
+interface Order2 {
   _id: mongoDB.ObjectId;
   operation: string;
   updateDate: Date;
   data: OrderData;
   subscriptions: OrderSubscription[];
-  userSubscriptions: OrderUserSubscription[];
 }
 
-interface Plan {
-  _id: mongoDB.ObjectId;
-  period: number;
-  price: number;
-}
-
-interface Subscription {
-  name: string;
-  description: string;
-  plans: Plan[];
-}
 
 interface csvData {
   orderId: string;
@@ -74,13 +78,8 @@ interface csvData {
   itemAmount: number;
   itemPrice: number;
   itemQtty: number;
-  subscriptionName: string | undefined;
+  subscription: string | undefined;
   planPeriod: number | undefined;
-  subscriptionId: mongoDB.ObjectId;
-  planId: mongoDB.ObjectId;
-  /*;
-	itemPaymentMethod: string;
-	itemPaymentObject: string;*/
 }
 
 function getSubsciption(
@@ -91,84 +90,126 @@ function getSubsciption(
     process.env.SUBSCRIPTIONS_COLLECTION as string
   );
 
-  const result = subscriptions.findOne<Subscription>({ _id: id });
-  return result;
+  return subscriptions.findOne<Subscription>({ _id: id });
 }
 
 async function getOrders(db: mongoDB.Db): Promise<csvData[]> {
   const csvres: csvData[] = [];
   const orders = db.collection(process.env.ORDERS_COLLECTION as string);
 
-  const query = {
-    operation: { $in: ["PAYMENT", "RENEW"] },
-    "data.Status": "CONFIRMED",
-  };
-
-  const cursor = orders.find<Order>(query, {
-    projection: {
-      _id: 1,
-      operation: 1,
-      updateDate: 1,
-      data: {
-        Status: 1,
-        Amount: 1,
-        CustomerKey: 1,
-        DATA: { email: 1 },
-        Receipt: { Items: 1 },
-      },
-      subscriptions: {
-        subscriptionId: 1,
-        planId: 1,
-      },
-      userSubscriptions: {
-        userSubscriptionId: 1,
-        period: 1,
-      },
-    },
-  });
-
-  const getSubscriptionPromises: Promise<Subscription | null>[] = [];
-  const docs = await cursor.toArray();
-
-  for (const doc of docs) {
-    doc.data.Receipt.Items.forEach(function (item, idx) {
-      var subscriptionId: mongoDB.ObjectId;
-      if (doc.operation === "RENEW") {
-        subscriptionId = doc.userSubscriptions[idx]?.userSubscriptionId;
-      } else {
-        subscriptionId = doc.subscriptions[idx]?.subscriptionId;
+  const query =
+  [
+    {
+      '$match': {
+        //'_id': new mongoDB.ObjectId('612cc2654badc3970d31ab60'), 
+        'operation': {
+          '$in': [
+            'PAYMENT', 'RENEW', 'RECURRING'
+          ]
+        }, 
+        'data.Status': {
+          '$in': [
+            'CONFIRMED', 'AUTHORIZED'
+          ]
+        }
       }
-      csvres.push({
-        orderId: doc._id.toHexString(),
-        email: doc.data.DATA.email,
-        customerKey: doc.data.CustomerKey,
-        operation: doc.operation,
-        status: doc.data.Status,
-        updateDate: doc.updateDate,
-        orderAmount: doc.data.Amount,
-        itemName: item.Name,
-        itemAmount: item.Amount,
-        itemPrice: item.Price,
-        itemQtty: item.Quantity,
-        subscriptionId: subscriptionId,
-        planId: doc.subscriptions[idx]?.planId,
-        subscriptionName: "",
-        planPeriod: doc.userSubscriptions[idx]?.period,
-      });
-      getSubscriptionPromises.push(getSubsciption(db, subscriptionId));
-    });
-  }
-
-  const subscriptions = await Promise.all(getSubscriptionPromises);
-  csvres.forEach(function (row, idx) {
-    row.subscriptionName = subscriptions[idx]?.name;
-    if (row.operation === "PAYMENT") {
-      row.planPeriod = subscriptions[idx]?.plans.find(
-        (plan) => plan._id.toHexString() === row.planId?.toHexString()
-      )?.period;
+    }, {
+      '$addFields': {
+        'userSubscriptions': {
+          '$ifNull': [
+            '$userSubscriptions', []
+          ]
+        }
+      }
+    }, {
+      '$lookup': {
+        'from': 'user_subscriptions', 
+        'localField': '_id', 
+        'foreignField': 'orderId', 
+        'as': 'userSubscriptions'
+      }
+    }, {
+      '$project': {
+        '_id': 1, 
+        'operation': 1, 
+        'updateDate': 1, 
+        'data': {
+          'Status': 1, 
+          'Amount': 1, 
+          'CustomerKey': 1, 
+          'DATA': {'email' : 1},
+          'Receipt': {
+            'Items': 1
+          }
+        }, 
+        'userSubscriptions': {
+          'userEmail': 1, 
+          'subscription': {
+            'name': 1, 
+            'description': 1
+          }, 
+          'plan': {
+            'period': 1, 
+            'price': 1
+          }
+        }
+      }
+    }, {
+      '$project': {
+        '_id': 1, 
+        'operation': 1, 
+        'updateDate': 1, 
+        'data': 1, 
+        'subscriptions': {
+          '$setUnion': [
+            '$userSubscriptions'
+          ]
+        }
+      }
     }
-  });
+  ];
 
+  const cursor = orders.aggregate<Order2>(query);
+  const docs = await cursor.toArray();
+  for (const doc of docs) {
+    if (doc.subscriptions && doc.subscriptions.length > 0) {
+      doc.subscriptions.forEach(function (item, idx) {
+        csvres.push({
+          orderId: doc._id.toHexString(),
+          email: doc.subscriptions[idx].userEmail,
+          customerKey: doc.data.CustomerKey,
+          operation: doc.operation,
+          status: doc.data.Status,
+          updateDate: doc.updateDate,
+          orderAmount: doc.data.Amount/100,
+          itemName: item.subscription.name,
+          itemAmount: doc.data.Receipt?.Items[idx]?.Amount/100,
+          itemPrice: item.plan.price,
+          itemQtty: doc.data.Receipt?.Items[idx]?.Quantity,
+          subscription: item.subscription.description,
+          planPeriod: item.plan.period,
+        });
+      })
+    } else {
+      doc.data.Receipt?.Items?.forEach(function (item, idx) {
+        csvres.push({
+          orderId: doc._id.toHexString(),
+          email: doc.data.DATA.email,
+          customerKey: doc.data.CustomerKey,
+          operation: doc.operation,
+          status: doc.data.Status,
+          updateDate: doc.updateDate,
+          orderAmount: doc.data.Amount/100,
+          itemName: item.Name,
+          itemAmount: doc.data.Receipt?.Items[idx]?.Amount/100,
+          itemPrice: item.Price/100,
+          itemQtty: doc.data.Receipt?.Items[idx]?.Quantity,
+          subscription: item.Name,
+          planPeriod: -1,
+        });
+      })
+    }
+  }
   return csvres;
 }
 
@@ -197,7 +238,7 @@ async function main(): Promise<void> {
         { id: "itemAmount", title: "ItemAmount" },
         { id: "itemPrice", title: "ItemPrice" },
         { id: "itemQtty", title: "ItemQuantity" },
-        { id: "subscriptionName", title: "Subscription" },
+        { id: "subscription", title: "Subscription" },
         { id: "planPeriod", title: "Period" },
       ],
     });
@@ -206,7 +247,11 @@ async function main(): Promise<void> {
     csvw
       .writeRecords(csvres)
       .then(() => console.log("The CSV file was written successfully"));
-  } finally {
+  } 
+  catch(err) {
+    console.log("ERRRR!!!", err);
+  }
+  finally {
     await client.close();
   }
   return;

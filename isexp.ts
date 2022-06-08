@@ -281,14 +281,11 @@ async function getOrders(db: mongoDB.Db): Promise<csvData[]> {
   return csvres;
 }
 
-
-
 interface csvParent {
   email: string;
   name: string;
   userId: string;
 }
-
 
 async function getIds(csvName: string): Promise<mongoDB.ObjectId[]> {
   const ids: mongoDB.ObjectId[] = [];
@@ -445,7 +442,6 @@ async function getUsers(db: mongoDB.Db, queryType: string, limit: number, school
   for (const doc of docs) {
     if (doc.students && doc.students.length > 0) {
       doc.students.forEach(function (item, idx) {
-          //console.log(item.classrooms[0]);
           csvres.push({
             userId: doc._id.toHexString(),
             country: doc.school?.country?doc.school.country:"",
@@ -509,8 +505,6 @@ async function fillClass(db: mongoDB.Db): Promise<number> {
 
 async function main(): Promise<void> {
 	const args = getArgs(process.argv);
-
-
 
   if (args.h) {
 	  return log_services.printHelp();

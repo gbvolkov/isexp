@@ -2,6 +2,8 @@ import { getArgs } from "./helpers/args";
 import * as mongoDB from "mongodb";
 import * as dotenv from "dotenv";
 import * as csv_writer from "csv-writer";
+import CsvReadableStream, * as csv_reader from "csv-reader";
+import * as fs from "fs";
 import * as log_services from "./services/log.service";
 
 var url = "mongodb://localhost:27017/ismart";
@@ -87,6 +89,7 @@ interface School {
 
 interface Classroom {
   _id: mongoDB.ObjectId;
+  gradeName: string;
 }
 
 interface Task {
@@ -127,6 +130,7 @@ interface csvUserData {
   studentName: string;
   classRoomsNumber: number;
   tasksNumber: number;
+  gradeName: string;
 }
 
 
@@ -277,7 +281,30 @@ async function getOrders(db: mongoDB.Db): Promise<csvData[]> {
   return csvres;
 }
 
-async function getUsers(db: mongoDB.Db, queryType: string): Promise<csvUserData[]> {
+
+
+interface csvParent {
+  email: string;
+  name: string;
+  userId: string;
+}
+
+
+async function getIds(csvName: string): Promise<mongoDB.ObjectId[]> {
+  const ids: mongoDB.ObjectId[] = [];
+  let inpuStream = fs.createReadStream(csvName, 'utf8');
+  inpuStream
+    .pipe(new CsvReadableStream({ parseNumbers: true, parseBooleans: true, trim: true, asObject: true }))
+    .on('data', function (row: csvParent) {
+      ids.push(new mongoDB.ObjectId(row.userId));
+	  })
+    .on('end', async function () {
+      return ids;
+    });
+  return ids;
+}
+
+async function getUsers(db: mongoDB.Db, queryType: string, limit: number, school: number = -1, mintasks: number = -1, csvName: string = ""): Promise<csvUserData[]> {
   const csvres: csvUserData[] = [];
   const users = db.collection(process.env.USERS_COLLECTION as string);
   let query: any;
@@ -291,83 +318,12 @@ async function getUsers(db: mongoDB.Db, queryType: string): Promise<csvUserData[
       }, {
         '$match': {
           'role': 'parent', 
-          /*'dateCreation': {
-            '$gt': new Date('Mon, 06 May 2022 00:00:00 GMT')
-          },*/
           'isActive': true
         }
-      }, {
-        '$lookup': {
-          'from': 'students', 
-          'pipeline': [
-            {
-              '$lookup': {
-                'from': 'classrooms', 
-                'localField': '_id', 
-                'foreignField': 'students.studentUserId', 
-                'as': 'classrooms'
-              }
-            }, {
-              '$lookup': {
-                'from': 'solved_tasks', 
-                'localField': '_id', 
-                'foreignField': 'student', 
-                'as': 'tasks'
-              }
-            }, {
-              '$project': {
-                '_id': 1, 
-                'activeTimeInSeconds': 1, 
-                'firstName': 1, 
-                'classrooms._id': 1, 
-                'tasks.usedTime': 1
-              }
-            }, {
-              '$match': {
-                'classrooms': {
-                  '$size': 0
-                }, 
-                '$expr': {
-                  '$gt': [
-                    {
-                      '$size': '$tasks'
-                    }, 0
-                  ]
-                }
-              }
-            }
-          ], 
-          'localField': '_id', 
-          'foreignField': 'parent', 
-          'as': 'students'
-        }
-      }, {
-        '$match': {
-          'students': {
-            '$size': 1
-          }
-        }
-      }, {
-        '$project': {
-          '_id': 1, 
-          'school.country': 1, 
-          'dateCreation': 1, 
-          'activeTimeInSeconds': 1, 
-          'email': 1, 
-          'lastActive': 1, 
-          'lastSignIn': 1, 
-          'firstName': 1, 
-          'students._id': 1, 
-          'students.activeTimeInSeconds': 1, 
-          'students.firstName': 1, 
-          'students.classrooms._id': 1, 
-          'students.tasks': 1
-        }
-      }, {
-        '$limit': 40
       }
     ];
-  } else {
+    console.log(query);
+  } else if (queryType === "old") {
     const lastSignIn = new Date();
     lastSignIn.setDate(lastSignIn.getDate()-30);
     query =
@@ -380,65 +336,395 @@ async function getUsers(db: mongoDB.Db, queryType: string): Promise<csvUserData[
           },
           'isActive': true
         }
-      }, {
-        '$lookup': {
-          'from': 'students', 
-          'pipeline': [
-            {
-              '$lookup': {
-                'from': 'classrooms', 
-                'localField': '_id', 
-                'foreignField': 'students.studentUserId', 
-                'as': 'classrooms'
-              }
-            }, {
-              '$lookup': {
-                'from': 'solved_tasks', 
-                'localField': '_id', 
-                'foreignField': 'student', 
-                'as': 'tasks'
-              }
-            }, {
-              '$project': {
-                '_id': 1, 
-                'activeTimeInSeconds': 1, 
-                'firstName': 1, 
-                'classrooms._id': 1, 
-                'tasks.usedTime': 1
-              }
-            }
-          ], 
-          'localField': '_id', 
-          'foreignField': 'parent', 
-          'as': 'students'
+      }
+    ];
+  } else {
+    const ids = await getIds (csvName);
+    query =
+    [
+      {
+        '$sort': {
+          'dateCreation': -1
         }
       }, {
         '$match': {
-          'students': {
-            '$size': 1
-          }
+          'role': 'parent',
+          'isActive': true,
+          '_id': {'$in': ids}
         }
-      }, {
-        '$project': {
-          '_id': 1, 
-          'school.country': 1, 
-          'dateCreation': 1, 
-          'activeTimeInSeconds': 1, 
-          'email': 1, 
-          'lastActive': 1, 
-          'lastSignIn': 1, 
-          'firstName': 1, 
-          'students._id': 1, 
-          'students.activeTimeInSeconds': 1, 
-          'students.firstName': 1, 
-          'students.classrooms._id': 1, 
-          'students.tasks': 1
-        }
-      }, {
-        '$limit': 40
       }
     ];
   }
+
+  query.push(
+    {
+      '$lookup': {
+        'from': 'students', 
+        'pipeline': [
+          {
+            '$lookup': {
+              'from': 'classrooms', 
+              'localField': '_id', 
+              'foreignField': 'students.studentUserId', 
+              'as': 'classrooms'
+            }
+          }, {
+            '$lookup': {
+              'from': 'solved_tasks', 
+              'localField': '_id', 
+              'foreignField': 'student', 
+              'as': 'tasks'
+            }
+          }, {
+            '$project': {
+              '_id': 1, 
+              'activeTimeInSeconds': 1, 
+              'firstName': 1, 
+              'classrooms._id': 1, 
+              'classrooms.gradeName': 1, 
+              'tasks.usedTime': 1
+            }
+          }, {
+            '$match': (school!=-1)?{
+              'classrooms': {
+                '$size': school
+              }, 
+              '$expr': {
+                '$gte': [
+                  {
+                    '$size': '$tasks'
+                  }, mintasks
+                ]
+              }
+            }:{
+              '$expr': {
+                '$gte': [
+                  {
+                    '$size': '$tasks'
+                  }, mintasks
+                ]
+              }
+            }
+          }
+        ], 
+        'localField': '_id', 
+        'foreignField': 'parent', 
+        'as': 'students'
+      }
+    }, {
+      '$match': {
+        'students': {
+          '$size': 1
+        }
+      }
+    }, {
+      '$project': {
+        '_id': 1, 
+        'school.country': 1, 
+        'dateCreation': 1, 
+        'activeTimeInSeconds': 1, 
+        'email': 1, 
+        'lastActive': 1, 
+        'lastSignIn': 1, 
+        'firstName': 1, 
+        'students._id': 1, 
+        'students.activeTimeInSeconds': 1, 
+        'students.firstName': 1, 
+        'students.classrooms._id': 1, 
+        'students.tasks': 1,
+        'students.classrooms.gradeName': 1, 
+      }
+    }, {
+      '$limit': limit
+    }
+  );
+
+  const cursor = users.aggregate<User>(query);
+  const docs = await cursor.toArray();
+  
+  for (const doc of docs) {
+    if (doc.students && doc.students.length > 0) {
+      doc.students.forEach(function (item, idx) {
+          //console.log(item.classrooms[0]);
+          csvres.push({
+            userId: doc._id.toHexString(),
+            country: doc.school?.country?doc.school.country:"",
+            createdDate: doc.dateCreation,
+            userActiveTime: doc.activeTimeInSeconds,
+            email: doc.email,
+            lastActive: doc.lastActive,
+            lastSignIn: doc.lastSignIn,
+            userName: doc.firstName,
+            studentId: item._id.toHexString(),
+            studentActiveTime: item.activeTimeInSeconds,
+            studentName: item.firstName,
+            classRoomsNumber: item.classrooms?item.classrooms.length:0,
+            tasksNumber: item.tasks?item.tasks.length:0,
+            gradeName: item.classrooms[0]?.gradeName?item.classrooms[0].gradeName:"NA",
+          });
+      });
+    }
+  }
+
+  return csvres;
+}
+
+async function fillClass(db: mongoDB.Db): Promise<number> {
+  console.log("STARTED");
+
+  const teachers = db.collection("teaches");
+  const classrooms = db.collection("classrooms");
+
+
+  const studentsAtTeacher = {
+    $push: {
+      "students": {
+        "active": true,
+        "_id": new mongoDB.ObjectId(),
+        "name": "Ника Волкова",
+        "invitationCode": "7WXFN",
+        "invitationAccepted": false
+    }}};
+  const studentsAtClassRoom = {
+    $push:{
+      "students":{	
+        "externalSource": null,
+        "externalUserSourceId": null,
+        "externalUserVendorId": null,
+        "active": true,
+        "_id":new mongoDB.ObjectId(),
+        "name": "Ника Волкова",
+        "invitationCode": "7WXFN",
+        "invitationAccepted": true,
+        "studentUserId": new mongoDB.ObjectId('628cdb851779be816078c931')
+    }}};
+  
+  const resultTeachers = teachers.findOneAndUpdate({"_id": new mongoDB.ObjectId('628bcf8001e2586b50c3a334') },
+    {studentsAtTeacher});
+  const resultClassRooms = classrooms.findOneAndUpdate({"_id": new mongoDB.ObjectId('628bcf8001e2586ec6c3a335') },
+    {studentsAtClassRoom});
+
+  return 0;
+}
+
+async function main(): Promise<void> {
+	const args = getArgs(process.argv);
+
+
+
+  if (args.h) {
+	  return log_services.printHelp();
+  }
+
+  let fileName: string;
+  if (args.f) {
+    fileName = args.f;
+  } else {
+	  return log_services.printHelp();
+  }
+
+  dotenv.config();
+
+  const client: mongoDB.MongoClient = new mongoDB.MongoClient(
+    process.env.DB_CONN_STRING as string
+  );
+
+  try {
+    console.log(process.env.DB_CONN_STRING);
+    await client.connect();
+
+    const db = client.db(process.env.DB_NAME);
+
+    if (args.o) {
+        const csvw = csv_writer.createObjectCsvWriter({
+        path: fileName,
+        header: [
+          { id: "orderId", title: "OrderID" },
+          { id: "email", title: "EMail" },
+          { id: "customerKey", title: "CustomerKey" },
+          { id: "operation", title: "Operation" },
+          { id: "status", title: "Status" },
+          { id: "updateDate", title: "OrderDate" },
+          { id: "orderAmount", title: "OrderAmount" },
+          { id: "itemName", title: "ItemName" },
+          { id: "itemAmount", title: "ItemAmount" },
+          { id: "itemPrice", title: "ItemPrice" },
+          { id: "itemQtty", title: "ItemQuantity" },
+          { id: "subscription", title: "Subscription" },
+          { id: "planPeriod", title: "Period" },
+        ],
+      });
+
+      const csvres = await getOrders(db);
+      csvw
+        .writeRecords(csvres)
+        .then(() => console.log("The CSV file was written successfully"));
+      return;
+    } // -o
+
+    if (args.a || args.l || args.i) {
+      const csvw = csv_writer.createObjectCsvWriter({
+        path: fileName,
+        header: [
+          { id: "userId", title: "UserID" },
+          { id: "country", title: "Country" },
+          { id: "createdDate", title: "Created" },
+          { id: "userActiveTime", title: "UserActivity" },
+          { id: "email", title: "EMail" },
+          { id: "lastActive", title: "LastActive" },
+          { id: "lastSignIn", title: "LastSignIn" },
+          { id: "userName", title: "UserName" },
+          { id: "studentId", title: "studentID" },
+          { id: "studentActiveTime", title: "StudentActivity" },
+          { id: "studentName", title: "StudentName" },
+          { id: "classRoomsNumber", title: "ClassRooms" },
+          { id: "tasksNumber", title: "TasksSolved" },
+          { id: "gradeName", title: "Grade" },
+        ],
+      });
+      let count: number = 40;
+      let school: number = -1;
+      let mintasks: number = 0;
+      let csvName = "";
+      if (args.c) {
+        count = parseInt(args.c);
+      }
+      if (args.s) {
+        school = parseInt(args.s);
+      }
+      if (args.t) {
+        mintasks = parseInt(args.t);
+      }
+      if (args.i) {
+        if (!args.v) {
+          return log_services.printHelp();
+        }
+        csvName = args.v;
+      }
+      const csvres = await getUsers(db, args.a?"new":"old", count, school, mintasks, csvName);
+      csvw
+        .writeRecords(csvres)
+        .then(() => console.log("The CSV file was written successfully"));
+    } //-a || -l || -i
+
+    /*
+    if (args.g) {
+      const res = await fillClass(db);      
+    }
+    */
+  } 
+  catch(err) {
+    console.log("ERRRR!!!", err);
+  }
+  finally {
+    await client.close();
+  }
+  return;
+}
+
+
+main();
+
+
+/*
+async function getUsersFromList(db: mongoDB.Db, queryType: string, csvName: string, limit: number, school: number = -1): Promise<csvUserData[]> {
+  const csvres: csvUserData[] = [];
+  const users = db.collection(process.env.USERS_COLLECTION as string);
+  let query: any;
+  const ids = await getIds (csvName);
+
+  query =
+  [
+    {
+      '$sort': {
+        'dateCreation': -1
+      }
+    }, {
+      '$match': {
+        'role': 'parent',
+        'isActive': true,
+        '_id': {'$in': ids}
+      }
+    }, {
+      '$lookup': {
+        'from': 'students', 
+        'pipeline': [
+          {
+            '$lookup': {
+              'from': 'classrooms', 
+              'localField': '_id', 
+              'foreignField': 'students.studentUserId', 
+              'as': 'classrooms'
+            }
+          }, {
+            '$lookup': {
+              'from': 'solved_tasks', 
+              'localField': '_id', 
+              'foreignField': 'student', 
+              'as': 'tasks'
+            }
+          }, {
+            '$project': {
+              '_id': 1, 
+              'activeTimeInSeconds': 1, 
+              'firstName': 1, 
+              'classrooms._id': 1, 
+              'tasks.usedTime': 1
+            }
+          }, {
+            '$match': (school!=-1)?{
+              'classrooms': {
+                '$size': school
+              }, 
+              '$expr': {
+                '$gt': [
+                  {
+                    '$size': '$tasks'
+                  }, 0
+                ]
+              }
+            }:{
+              '$expr': {
+                '$gt': [
+                  {
+                    '$size': '$tasks'
+                  }, 0
+                ]
+              }
+            }
+          }
+        ], 
+        'localField': '_id', 
+        'foreignField': 'parent', 
+        'as': 'students'
+      }
+    }, {
+      '$match': {
+        'students': {
+          '$size': 1
+        }
+      }
+    }, {
+      '$project': {
+        '_id': 1, 
+        'school.country': 1, 
+        'dateCreation': 1, 
+        'activeTimeInSeconds': 1, 
+        'email': 1, 
+        'lastActive': 1, 
+        'lastSignIn': 1, 
+        'firstName': 1, 
+        'students._id': 1, 
+        'students.activeTimeInSeconds': 1, 
+        'students.firstName': 1, 
+        'students.classrooms._id': 1, 
+        'students.tasks': 1
+      }
+    }, {
+      '$limit': limit
+    }
+  ];
+
   const cursor = users.aggregate<User>(query);
   const docs = await cursor.toArray();
   
@@ -465,95 +751,6 @@ async function getUsers(db: mongoDB.Db, queryType: string): Promise<csvUserData[
       });
     }
   }
-
   return csvres;
 }
-
-async function main(): Promise<void> {
-	const args = getArgs(process.argv);
-
-  if (args.h) {
-	  return log_services.printHelp();
-  }
-
-  let fileName: string;
-  if (args.f) {
-    fileName = args.f;
-  } else {
-	  return log_services.printHelp();
-  }
-
-  dotenv.config();
-
-  const client: mongoDB.MongoClient = new mongoDB.MongoClient(
-    process.env.DB_CONN_STRING as string
-  );
-
-  try {
-    await client.connect();
-
-    const db = client.db(process.env.DB_NAME);
-    if (args.o) {
-        const csvw = csv_writer.createObjectCsvWriter({
-        path: fileName,
-        header: [
-          { id: "orderId", title: "OrderID" },
-          { id: "email", title: "EMail" },
-          { id: "customerKey", title: "CustomerKey" },
-          { id: "operation", title: "Operation" },
-          { id: "status", title: "Status" },
-          { id: "updateDate", title: "OrderDate" },
-          { id: "orderAmount", title: "OrderAmount" },
-          { id: "itemName", title: "ItemName" },
-          { id: "itemAmount", title: "ItemAmount" },
-          { id: "itemPrice", title: "ItemPrice" },
-          { id: "itemQtty", title: "ItemQuantity" },
-          { id: "subscription", title: "Subscription" },
-          { id: "planPeriod", title: "Period" },
-        ],
-      });
-
-      const csvres = await getOrders(db);
-      csvw
-        .writeRecords(csvres)
-        .then(() => console.log("The CSV file was written successfully"));
-      return;
-    }
-
-    if (args.a || args.l) {
-      const csvw = csv_writer.createObjectCsvWriter({
-        path: fileName,
-        header: [
-          { id: "userId", title: "UserID" },
-          { id: "country", title: "Country" },
-          { id: "createdDate", title: "Created" },
-          { id: "userActiveTime", title: "UserActivity" },
-          { id: "email", title: "EMail" },
-          { id: "lastActive", title: "LastActive" },
-          { id: "lastSignIn", title: "LastSignIn" },
-          { id: "userName", title: "UserName" },
-          { id: "studentId", title: "studentID" },
-          { id: "studentActiveTime", title: "StudentActivity" },
-          { id: "studentName", title: "StudentName" },
-          { id: "classRoomsNumber", title: "ClassRooms" },
-          { id: "tasksNumber", title: "TasksSolved" },
-        ],
-      });
-
-      const csvres = await getUsers(db, args.a?"new":"old");
-      csvw
-        .writeRecords(csvres)
-        .then(() => console.log("The CSV file was written successfully"));
-    }
-  } 
-  catch(err) {
-    console.log("ERRRR!!!", err);
-  }
-  finally {
-    await client.close();
-  }
-  return;
-}
-
-
-main();
+*/

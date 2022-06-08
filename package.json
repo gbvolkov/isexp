@@ -9,8 +9,10 @@
   "scripts": {
     "start": "node ./dist/isexp.js",
     "orders": "node ./dist/isexp.js -o -f orders.csv",
-    "newusr": "node ./dist/isexp.js -a -f active_users.csv",
+    "newusr": "node ./dist/isexp.js -a -f active_users.csv -c 140 -t 1",
     "oldusr": "node ./dist/isexp.js -l -f any_users.csv",
+    "usrids": "node ./dist/isexp.js -i -v parents.csv -f ids_users.csv -c 100000",
+    "fill": "node ./dist/isexp.js -i -f tofill.csv",
     "build": "pkg ./dist/isexp.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -31,6 +33,7 @@
   "homepage": "https://github.com/gbvolkov/isexp#readme",
   "dependencies": {
     "@types/dedent": "^0.7.0",
+    "csv-reader": "^1.0.8",
     "csv-writer": "^1.6.0",
     "dedent": "^0.7.0",
     "dotenv": "^16.0.0",

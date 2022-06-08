@@ -108,3 +108,6 @@ dist
 
 # csv files
 *.csv
+
+# Excel files
+*.xlsx

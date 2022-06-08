@@ -408,7 +408,7 @@ async function getUsers(db: mongoDB.Db, queryType: string, limit: number, school
         'foreignField': 'parent', 
         'as': 'students'
       }
-    }, {
+    }, { //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!LOOKHERE
       '$match': {
         'students': {
           '$size': 1
@@ -595,7 +595,7 @@ async function main(): Promise<void> {
         }
         csvName = args.v;
       }
-      const csvres = await getUsers(db, args.a?"new":"old", count, school, mintasks, csvName);
+      const csvres = await getUsers(db, args.a?"new":args.l?"old":"ids", count, school, mintasks, csvName);
       csvw
         .writeRecords(csvres)
         .then(() => console.log("The CSV file was written successfully"));

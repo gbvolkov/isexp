@@ -116,3 +116,6 @@ dist
 isexp-linux
 isexp-macos
 isexp-win.exe
+
+#cmd files
+*.cmd

@@ -237,6 +237,7 @@ async function getOrders(db: mongoDB.Db): Promise<csvData[]> {
     }
   ];
 
+
   const cursor = orders.aggregate<Order2>(query);
   const docs = await cursor.toArray();
   for (const doc of docs) {
@@ -319,7 +320,6 @@ async function getUsers(db: mongoDB.Db, queryType: string, limit: number, school
         }
       }
     ];
-    console.log(query);
   } else if (queryType === "old") {
     const lastSignIn = new Date();
     lastSignIn.setDate(lastSignIn.getDate()-30);
@@ -438,6 +438,7 @@ async function getUsers(db: mongoDB.Db, queryType: string, limit: number, school
     }
   );
 
+  //console.log(query);
   const cursor = users.aggregate<User>(query);
   const docs = await cursor.toArray();
   

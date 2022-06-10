@@ -301,7 +301,7 @@ async function getIds(csvName: string): Promise<mongoDB.ObjectId[]> {
   return ids;
 }
 
-async function getUsers(db: mongoDB.Db, queryType: string, limit: number, school: number = -1, mintasks: number = -1, csvName: string = ""): Promise<csvUserData[]> {
+async function getUsers(db: mongoDB.Db, queryType: string, limit: number, school: number = -1, mintasks: number = -1, maxStudents: number = 1, csvName: string = ""): Promise<csvUserData[]> {
   const csvres: csvUserData[] = [];
   const users = db.collection(process.env.USERS_COLLECTION as string);
   let query: any;
@@ -408,11 +408,13 @@ async function getUsers(db: mongoDB.Db, queryType: string, limit: number, school
         'foreignField': 'parent', 
         'as': 'students'
       }
-    }, { //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!LOOKHERE
-      '$match': {
-        'students': {
-          '$size': 1
-        }
+    }, { 
+      '$match': {'$expr': {
+        '$lte': [
+          {
+            '$size': '$students'
+          }, maxStudents
+        ]}
       }
     }, {
       '$project': {
@@ -580,6 +582,8 @@ async function main(): Promise<void> {
       let school: number = -1;
       let mintasks: number = 0;
       let csvName = "";
+      let maxStudents = 1;
+
       if (args.c) {
         count = parseInt(args.c);
       }
@@ -589,13 +593,16 @@ async function main(): Promise<void> {
       if (args.t) {
         mintasks = parseInt(args.t);
       }
+      if (args.m) {
+        maxStudents = parseInt(args.m);
+      }
       if (args.i) {
         if (!args.v) {
           return log_services.printHelp();
         }
         csvName = args.v;
       }
-      const csvres = await getUsers(db, args.a?"new":args.l?"old":"ids", count, school, mintasks, csvName);
+      const csvres = await getUsers(db, args.a?"new":args.l?"old":"ids", count, school, mintasks, maxStudents, csvName);
       csvw
         .writeRecords(csvres)
         .then(() => console.log("The CSV file was written successfully"));
